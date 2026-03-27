@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+	.image-rendering-pixelated {
+		image-rendering: pixelated;
+	}
+}

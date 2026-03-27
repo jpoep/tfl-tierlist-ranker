@@ -1,0 +1,39 @@
+{
+  "name": "tfl-tierlist-ranker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "biome check src/ scripts/",
+    "lint:fix": "biome check --write src/ scripts/",
+    "format": "biome format --write src/ scripts/",
+    "preview": "vite preview",
+    "fetch-pokemon": "bun run scripts/fetch-pokemon.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.95.2",
+    "@tanstack/react-router": "^1.168.7",
+    "dexie": "^4.4.1",
+    "dexie-react-hooks": "^4.4.0",
+    "effect": "^3.21.0",
+    "openskill": "^4.1.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.9",
+    "@tailwindcss/vite": "^4.2.2",
+    "@tanstack/react-query-devtools": "^5.95.2",
+    "@tanstack/router-devtools": "^1.166.11",
+    "@types/node": "^24.12.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.1"
+  }
+}
