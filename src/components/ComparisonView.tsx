@@ -15,16 +15,24 @@ type VoteState =
   | { status: "error"; message: string };
 
 const KeyHint = ({
-  label,
+  labels,
   description,
 }: {
-  label: string;
+  labels: string[];
   description: string;
 }) => (
   <span className="flex items-center gap-1.5">
-    <kbd className="inline-flex h-5 min-w-5 items-center justify-center rounded border border-white/20 bg-white/10 px-1 font-mono text-[10px] text-white/50">
-      {label}
-    </kbd>
+    {labels.map((label, i) => (
+      <>
+        <kbd
+          key={label}
+          className="inline-flex h-5 min-w-5 items-center justify-center rounded border border-white/20 bg-white/10 px-1 font-mono text-[10px] text-white/50"
+        >
+          {label}
+        </kbd>
+        {i < labels.length - 1 && <span className="text-white/25">/</span>}
+      </>
+    ))}
     <span className="text-white/25">{description}</span>
   </span>
 );
@@ -77,10 +85,10 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
         return;
       }
 
-      if (e.key === "ArrowLeft") {
+      if (e.key === "ArrowLeft" || e.key === "j") {
         e.preventDefault();
         handleVote(pair.left.pokemon.id, pair.right.pokemon.id);
-      } else if (e.key === "ArrowRight") {
+      } else if (e.key === "ArrowRight" || e.key === "l") {
         e.preventDefault();
         handleVote(pair.right.pokemon.id, pair.left.pokemon.id);
       } else if (e.key === " ") {
@@ -186,9 +194,9 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
       {/* Keyboard hints — only shown while idle */}
       {!isDone && (
         <div className="flex items-center gap-4 text-xs">
-          <KeyHint label="←" description="left wins" />
-          <KeyHint label="→" description="right wins" />
-          <KeyHint label="Space" description="skip" />
+          <KeyHint labels={["←", "J"]} description="left wins" />
+          <KeyHint labels={["→", "L"]} description="right wins" />
+          <KeyHint labels={["Space"]} description="skip" />
         </div>
       )}
     </div>
