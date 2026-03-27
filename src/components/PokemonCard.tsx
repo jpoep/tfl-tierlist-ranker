@@ -50,7 +50,7 @@ export const PokemonCard = ({
       onClick={onClick}
       disabled={!isClickable}
       className={twMerge(
-        "group flex flex-col items-center gap-3 rounded-2xl border-2 p-6 transition-all duration-150 select-none",
+        "group flex flex-col items-center gap-3 rounded-2xl border-2 p-4 transition-all duration-150 select-none",
         isClickable
           ? "cursor-pointer hover:shadow-lg active:scale-95"
           : "cursor-default",
@@ -66,7 +66,7 @@ export const PokemonCard = ({
       }
     >
       {/* Sprite */}
-      <div className="relative flex h-28 w-28 items-center justify-center">
+      <div className="relative flex h-28 max-w-28 items-center justify-center">
         <img
           src={pokemon.spriteUrl}
           alt={pokemon.displayName}

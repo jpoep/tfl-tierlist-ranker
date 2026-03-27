@@ -120,7 +120,7 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
       </div>
 
       {/* Cards row */}
-      <div className="grid w-full max-w-xl grid-cols-[1fr_auto_1fr] items-center gap-4">
+      <div className="grid w-full max-w-xl grid-cols-[1fr_auto_1fr] items-center gap-2">
         <PokemonCard
           className="place-self-center"
           pokemon={left.pokemon}
