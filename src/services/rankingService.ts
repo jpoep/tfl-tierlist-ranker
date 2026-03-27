@@ -1,7 +1,7 @@
 import { Data, Effect } from "effect";
-import { db } from "@/db";
-import type { Matchup, Rating } from "@/db/schema";
-import { applyMatchResult, createInitialRating, type RankingError } from "@/ranking/openskill";
+import { supabase } from "@/lib/supabase";
+import type { RatingRow, MatchupRow } from "@/lib/db-types";
+import { applyMatchResult, type RankingError } from "@/ranking/openskill";
 import type { Pokemon } from "@/types/pokemon";
 
 // ---------------------------------------------------------------------------
@@ -9,177 +9,242 @@ import type { Pokemon } from "@/types/pokemon";
 // ---------------------------------------------------------------------------
 
 export class DbError extends Data.TaggedError("DbError")<{
-	message: string;
-	cause?: unknown;
+  message: string;
+  cause?: unknown;
 }> {}
 
 export class SeedError extends Data.TaggedError("SeedError")<{
-	message: string;
-	cause?: unknown;
+  message: string;
+  cause?: unknown;
 }> {}
 
 export type RankingServiceError = DbError | RankingError | SeedError;
 
 // ---------------------------------------------------------------------------
-// Internal DB helpers wrapped in Effect
+// Internal helpers
 // ---------------------------------------------------------------------------
 
-const dbGet = <T>(operation: () => Promise<T>, context: string): Effect.Effect<T, DbError> =>
-	Effect.tryPromise({
-		try: operation,
-		catch: (cause) => new DbError({ message: `DB read failed: ${context}`, cause }),
-	});
+/**
+ * Maps a Supabase `RatingRow` (snake_case, pokemon_id) to the app's `Rating`
+ * interface (camelCase, pokemonId) used throughout ranking/ and hooks/.
+ */
+const toRating = (row: RatingRow) => ({
+  pokemonId: row.pokemon_id,
+  mu: row.mu,
+  sigma: row.sigma,
+  ordinal: row.ordinal,
+  matchCount: row.match_count,
+});
+
+/**
+ * Maps a Supabase `MatchupRow` to the shape expected by pairSelection.ts.
+ */
+const toMatchup = (row: MatchupRow) => ({
+  id: row.id,
+  winnerId: row.winner_id,
+  loserId: row.loser_id,
+  skipped: row.skipped,
+  timestamp: new Date(row.created_at).getTime(),
+});
+
+const dbGet = <T>(
+  operation: () => Promise<T>,
+  context: string,
+): Effect.Effect<T, DbError> =>
+  Effect.tryPromise({
+    try: operation,
+    catch: (cause) =>
+      new DbError({ message: `DB read failed: ${context}`, cause }),
+  });
 
 const dbWrite = (
-	operation: () => Promise<unknown>,
-	context: string,
+  operation: () => Promise<unknown>,
+  context: string,
 ): Effect.Effect<void, DbError> =>
-	Effect.tryPromise({
-		try: () => operation().then(() => undefined),
-		catch: (cause) => new DbError({ message: `DB write failed: ${context}`, cause }),
-	});
+  Effect.tryPromise({
+    try: () => operation().then(() => undefined),
+    catch: (cause) =>
+      new DbError({ message: `DB write failed: ${context}`, cause }),
+  });
 
 // ---------------------------------------------------------------------------
 // Seed
 // ---------------------------------------------------------------------------
 
 /**
- * Seeds the `pokemon` and `ratings` tables from the static asset.
- * Idempotent — safe to call on every app start.
- * Only writes rows that don't already exist.
+ * No-op in the Supabase version — seeding is done once via the
+ * `scripts/seed-supabase.ts` script using the service role key.
+ *
+ * Kept so call sites in routes/index.tsx don't need to change.
  */
 export const seedDatabase = (
-	pokemonList: Pokemon[],
+  _pokemonList: Pokemon[],
 ): Effect.Effect<{ seeded: number }, SeedError> =>
-	Effect.tryPromise({
-		try: async () => {
-			const existingCount = await db.pokemon.count();
-
-			if (existingCount === pokemonList.length) {
-				return { seeded: 0 };
-			}
-
-			const existingIds = new Set((await db.pokemon.toArray()).map((p) => p.id));
-
-			const newPokemon = pokemonList.filter((p) => !existingIds.has(p.id));
-
-			if (newPokemon.length === 0) {
-				return { seeded: 0 };
-			}
-
-			const newRatings: Rating[] = newPokemon.map((p) => createInitialRating(p.id));
-
-			await db.transaction("rw", [db.pokemon, db.ratings], async () => {
-				await db.pokemon.bulkAdd(newPokemon);
-				await db.ratings.bulkAdd(newRatings);
-			});
-
-			return { seeded: newPokemon.length };
-		},
-		catch: (cause) => new SeedError({ message: "Failed to seed database", cause }),
-	});
+  Effect.succeed({ seeded: 0 });
 
 // ---------------------------------------------------------------------------
 // Record a vote
 // ---------------------------------------------------------------------------
 
 /**
- * Records a user vote (winner beats loser), updates both ratings,
- * and appends to matchup history — all in a single Dexie transaction.
+ * Computes the updated ratings client-side with OpenSkill, then calls the
+ * `record_vote` Postgres function which writes both rating updates and the
+ * matchup log entry as a single atomic transaction.
  */
 export const recordVote = (
-	winnerId: number,
-	loserId: number,
+  winnerId: number,
+  loserId: number,
 ): Effect.Effect<void, RankingServiceError> =>
-	Effect.gen(function* () {
-		const [winnerRating, loserRating] = yield* dbGet(
-			() => Promise.all([db.ratings.get(winnerId), db.ratings.get(loserId)]),
-			`fetch ratings for ${winnerId} vs ${loserId}`,
-		);
+  Effect.gen(function* () {
+    // Fetch current ratings for both participants
+    const { data: rows, error: fetchError } = yield* Effect.tryPromise({
+      try: () =>
+        supabase
+          .from("ratings")
+          .select("*")
+          .in("pokemon_id", [winnerId, loserId]),
+      catch: (cause) =>
+        new DbError({
+          message: `Failed to fetch ratings for ${winnerId} vs ${loserId}`,
+          cause,
+        }),
+    });
 
-		if (!winnerRating) {
-			return yield* Effect.fail(
-				new DbError({
-					message: `Rating not found for pokemonId ${winnerId}`,
-				}),
-			);
-		}
+    if (fetchError) {
+      return yield* Effect.fail(
+        new DbError({ message: `Supabase error: ${fetchError.message}` }),
+      );
+    }
 
-		if (!loserRating) {
-			return yield* Effect.fail(
-				new DbError({
-					message: `Rating not found for pokemonId ${loserId}`,
-				}),
-			);
-		}
+    const winnerRow = rows?.find((r) => r.pokemon_id === winnerId);
+    const loserRow = rows?.find((r) => r.pokemon_id === loserId);
 
-		const { updatedWinner, updatedLoser } = yield* applyMatchResult(winnerRating, loserRating);
+    if (!winnerRow) {
+      return yield* Effect.fail(
+        new DbError({ message: `Rating not found for pokemonId ${winnerId}` }),
+      );
+    }
+    if (!loserRow) {
+      return yield* Effect.fail(
+        new DbError({ message: `Rating not found for pokemonId ${loserId}` }),
+      );
+    }
 
-		const matchup: Matchup = {
-			winnerId,
-			loserId,
-			skipped: false,
-			timestamp: Date.now(),
-		};
+    const winnerRating = toRating(winnerRow);
+    const loserRating = toRating(loserRow);
 
-		yield* dbWrite(
-			() =>
-				db.transaction("rw", [db.ratings, db.matchups], async () => {
-					await db.ratings.put(updatedWinner);
-					await db.ratings.put(updatedLoser);
-					await db.matchups.add(matchup);
-				}),
-			`record vote ${winnerId} > ${loserId}`,
-		);
-	});
+    // Run OpenSkill computation (pure, client-side)
+    const { updatedWinner, updatedLoser } = yield* applyMatchResult(
+      winnerRating,
+      loserRating,
+    );
+
+    // Atomically write both updated ratings + matchup row via Postgres function
+    yield* dbWrite(async () => {
+      const { error } = await supabase.rpc("record_vote", {
+        p_winner_id: winnerId,
+        p_loser_id: loserId,
+        p_winner_mu: updatedWinner.mu,
+        p_winner_sigma: updatedWinner.sigma,
+        p_winner_ordinal: updatedWinner.ordinal,
+        p_winner_match_count: updatedWinner.matchCount,
+        p_loser_mu: updatedLoser.mu,
+        p_loser_sigma: updatedLoser.sigma,
+        p_loser_ordinal: updatedLoser.ordinal,
+        p_loser_match_count: updatedLoser.matchCount,
+      });
+      if (error) throw new Error(error.message);
+    }, `record_vote ${winnerId} > ${loserId}`);
+  });
 
 // ---------------------------------------------------------------------------
 // Record a skip
 // ---------------------------------------------------------------------------
 
 /**
- * Records a skipped comparison. The pair is logged in matchup history
- * (so the pair-selection cooldown applies) but ratings are not updated.
+ * Appends a skipped matchup entry via the `record_skip` Postgres function.
+ * Ratings are NOT updated for skips.
  */
-export const recordSkip = (pokemonAId: number, pokemonBId: number): Effect.Effect<void, DbError> =>
-	dbWrite(
-		() =>
-			db.matchups.add({
-				winnerId: pokemonAId,
-				loserId: pokemonBId,
-				skipped: true,
-				timestamp: Date.now(),
-			}),
-		`record skip ${pokemonAId} vs ${pokemonBId}`,
-	);
+export const recordSkip = (
+  pokemonAId: number,
+  pokemonBId: number,
+): Effect.Effect<void, DbError> =>
+  dbWrite(async () => {
+    const { error } = await supabase.rpc("record_skip", {
+      p_pokemon_a_id: pokemonAId,
+      p_pokemon_b_id: pokemonBId,
+    });
+    if (error) throw new Error(error.message);
+  }, `record_skip ${pokemonAId} vs ${pokemonBId}`);
 
 // ---------------------------------------------------------------------------
 // Read helpers
 // ---------------------------------------------------------------------------
 
 /**
- * Fetches all Pokémon from the DB, sorted by id.
+ * Fetches all Pokémon from Supabase, sorted by id.
+ * Used by usePokemon (via TanStack Query) for the static Pokémon list.
  */
 export const getAllPokemon = (): Effect.Effect<Pokemon[], DbError> =>
-	dbGet(() => db.pokemon.orderBy("id").toArray(), "getAllPokemon");
+  dbGet(async () => {
+    const { data, error } = await supabase
+      .from("pokemon")
+      .select("*")
+      .order("id", { ascending: true });
+
+    if (error) throw new Error(error.message);
+
+    return (data ?? []).map((row) => ({
+      id: row.id,
+      name: row.name,
+      displayName: row.display_name,
+      spriteUrl: row.sprite_url,
+      type1: row.type1,
+      type2: row.type2 ?? null,
+      bst: row.bst,
+    }));
+  }, "getAllPokemon");
 
 /**
- * Fetches all ratings from the DB.
+ * Fetches all ratings from Supabase, mapped to the app's Rating interface.
  */
-export const getAllRatings = (): Effect.Effect<Rating[], DbError> =>
-	dbGet(() => db.ratings.toArray(), "getAllRatings");
+export const getAllRatings = (): Effect.Effect<
+  ReturnType<typeof toRating>[],
+  DbError
+> =>
+  dbGet(async () => {
+    const { data, error } = await supabase.from("ratings").select("*");
+    if (error) throw new Error(error.message);
+    return (data ?? []).map(toRating);
+  }, "getAllRatings");
 
 /**
  * Fetches the N most recent matchups (for pair selection cooldown).
  */
-export const getRecentMatchups = (limit: number): Effect.Effect<Matchup[], DbError> =>
-	dbGet(
-		() => db.matchups.orderBy("timestamp").reverse().limit(limit).toArray(),
-		`getRecentMatchups(${limit})`,
-	);
+export const getRecentMatchups = (
+  limit: number,
+): Effect.Effect<ReturnType<typeof toMatchup>[], DbError> =>
+  dbGet(async () => {
+    const { data, error } = await supabase
+      .from("matchups")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
+
+    if (error) throw new Error(error.message);
+    return (data ?? []).map(toMatchup);
+  }, `getRecentMatchups(${limit})`);
 
 /**
- * Fetches total matchup count (excluding skips) for stats display.
+ * Fetches total non-skipped matchup count for stats display.
  */
 export const getVoteCount = (): Effect.Effect<number, DbError> =>
-	dbGet(() => db.matchups.filter((m) => !m.skipped).count(), "getVoteCount");
+  dbGet(async () => {
+    const { count, error } = await supabase
+      .from("matchups")
+      .select("*", { count: "exact", head: true })
+      .eq("skipped", false);
+
+    if (error) throw new Error(error.message);
+    return count ?? 0;
+  }, "getVoteCount");

@@ -1,3 +1,11 @@
+# Environment variables
+.env.local
+.env.*.local
+
+# Supabase CLI — generated files and local dev config (not used in this project)
+supabase/.temp/
+supabase/config.toml
+
 # Logs
 logs
 *.log

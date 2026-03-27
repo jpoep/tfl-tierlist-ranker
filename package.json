@@ -10,14 +10,15 @@
     "lint:fix": "biome check --write src/ scripts/",
     "format": "biome format --write src/ scripts/",
     "preview": "vite preview",
-    "fetch-pokemon": "bun run scripts/fetch-pokemon.ts"
+    "fetch-pokemon": "bun run scripts/fetch-pokemon.ts",
+    "seed-supabase": "bun run scripts/seed-supabase.ts",
+    "gen-types": "bunx supabase gen types typescript --project-id YOUR_PROJECT_REF --schema public > src/lib/database.types.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.100.1",
     "@tanstack/react-query": "^5.95.2",
     "@tanstack/react-router": "^1.168.7",
     "clsx": "^2.1.1",
-    "dexie": "^4.4.1",
-    "dexie-react-hooks": "^4.4.0",
     "effect": "^3.21.0",
     "openskill": "^4.1.1",
     "react": "^19.2.4",

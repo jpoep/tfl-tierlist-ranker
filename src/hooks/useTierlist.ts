@@ -1,9 +1,16 @@
-import { useLiveQuery } from "dexie-react-hooks";
-import { useMemo } from "react";
-import { db } from "@/db";
-import type { Rating } from "@/db/schema";
-import { estimateVotesNeeded, globalConfidence, perPokemonConfidence } from "@/ranking/openskill";
-import { computeTierlist, type StrategyName, type TieredList } from "@/ranking/tiers";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { supabase } from "@/lib/supabase";
+import type { RatingRow, MatchupRow } from "@/lib/db-types";
+import {
+  estimateVotesNeeded,
+  globalConfidence,
+  perPokemonConfidence,
+} from "@/ranking/openskill";
+import {
+  computeTierlist,
+  type StrategyName,
+  type TieredList,
+} from "@/ranking/tiers";
 import type { Pokemon } from "@/types/pokemon";
 
 // ---------------------------------------------------------------------------
@@ -11,37 +18,40 @@ import type { Pokemon } from "@/types/pokemon";
 // ---------------------------------------------------------------------------
 
 export interface TierlistConfidence {
-	/** Global confidence score in [0, 1] */
-	score: number;
-	/** Estimated number of additional votes to reach the target confidence */
-	votesNeeded: number;
-	/** The target confidence threshold used for estimation */
-	targetConfidence: number;
+  /** Global confidence score in [0, 1] */
+  score: number;
+  /** Estimated number of additional votes to reach the target confidence */
+  votesNeeded: number;
+  /** The target confidence threshold used for estimation */
+  targetConfidence: number;
 }
 
 export interface TierlistResult {
-	tiers: TieredList;
-	confidence: TierlistConfidence;
-	/** Total number of non-skipped votes recorded */
-	totalVotes: number;
-	/** Whether the tierlist has enough data to be considered meaningful */
-	hasSufficientData: boolean;
+  tiers: TieredList;
+  confidence: TierlistConfidence;
+  /** Total number of non-skipped votes recorded */
+  totalVotes: number;
+  /** Whether the tierlist has enough data to be considered meaningful */
+  hasSufficientData: boolean;
 }
 
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
 
-/**
- * Minimum number of votes before we consider the tierlist meaningful enough
- * to display with full confidence UI.
- */
 const MIN_VOTES_FOR_DISPLAY = 20;
-
-/**
- * The confidence threshold we aim for — used for "votes needed" estimation.
- */
 const TARGET_CONFIDENCE = 0.9;
+
+// ---------------------------------------------------------------------------
+// Internal state shape
+// ---------------------------------------------------------------------------
+
+interface TierlistState {
+  pokemon: Pokemon[];
+  ratings: RatingRow[];
+  totalVotes: number;
+  isLoading: boolean;
+}
 
 // ---------------------------------------------------------------------------
 // Hook
@@ -50,67 +60,179 @@ const TARGET_CONFIDENCE = 0.9;
 /**
  * Reactively computes the full tierlist and confidence metrics.
  *
- * Re-runs automatically whenever ratings or matchups change in Dexie.
+ * Subscribes to Supabase Realtime on the `ratings` and `matchups` tables.
+ * Any row change on either table triggers a re-fetch of only the changed
+ * data, keeping bandwidth minimal.
  *
+ * @param pokemon - The full Pokémon list from usePokemon (static, never changes)
  * @param strategy - Which tier assignment strategy to use (default: fixedPercentile)
  */
 export const useTierlist = (
-	strategy: StrategyName = "fixedPercentile",
+  pokemon: Pokemon[],
+  strategy: StrategyName = "fixedPercentile",
 ): TierlistResult | undefined => {
-	const data = useLiveQuery(async () => {
-		const [allPokemon, allRatings, totalVotes] = await Promise.all([
-			db.pokemon.toArray(),
-			db.ratings.toArray(),
-			db.matchups.filter((m) => !m.skipped).count(),
-		]);
+  const [state, setState] = useState<TierlistState>({
+    pokemon,
+    ratings: [],
+    totalVotes: 0,
+    isLoading: true,
+  });
 
-		return { allPokemon, allRatings, totalVotes };
-	});
+  // Keep a ref to the latest ratings so Realtime callbacks can do
+  // surgical updates without needing to close over stale state.
+  const ratingsRef = useRef<Map<number, RatingRow>>(new Map());
 
-	const result = useMemo(() => {
-		if (!data) return undefined;
+  // -------------------------------------------------------------------------
+  // Initial data fetch + Realtime subscriptions
+  // -------------------------------------------------------------------------
 
-		const { allPokemon, allRatings, totalVotes } = data;
+  useEffect(() => {
+    let cancelled = false;
 
-		if (allPokemon.length === 0 || allRatings.length === 0) {
-			return undefined;
-		}
+    // Fetch all ratings and the non-skipped vote count in parallel
+    const fetchInitialData = async () => {
+      const [ratingsResult, countResult] = await Promise.all([
+        supabase.from("ratings").select("*"),
+        supabase
+          .from("matchups")
+          .select("*", { count: "exact", head: true })
+          .eq("skipped", false),
+      ]);
 
-		// Build a map for O(1) rating lookups
-		const ratingMap = new Map<number, Rating>(allRatings.map((r) => [r.pokemonId, r]));
+      if (cancelled) return;
 
-		// Join pokemon with their ratings — skip any with missing ratings
-		const ratedPokemon = allPokemon.flatMap((pokemon: Pokemon) => {
-			const rating = ratingMap.get(pokemon.id);
-			if (!rating) return [];
-			return [{ pokemon, rating }];
-		});
+      if (ratingsResult.error) {
+        console.error(
+          "[useTierlist] failed to fetch ratings:",
+          ratingsResult.error,
+        );
+        return;
+      }
 
-		if (ratedPokemon.length === 0) return undefined;
+      const ratingsMap = new Map<number, RatingRow>(
+        (ratingsResult.data ?? []).map((r) => [r.pokemon_id, r]),
+      );
+      ratingsRef.current = ratingsMap;
 
-		// Compute the tiered list using the chosen strategy
-		const tiers = computeTierlist(ratedPokemon, strategy);
+      setState({
+        pokemon,
+        ratings: ratingsResult.data ?? [],
+        totalVotes: countResult.count ?? 0,
+        isLoading: false,
+      });
+    };
 
-		// Compute confidence metrics
-		const ratingsOnly = ratedPokemon.map((rp) => rp.rating);
-		const confidenceScore = globalConfidence(ratingsOnly);
-		const votesNeeded = estimateVotesNeeded(ratingsOnly, TARGET_CONFIDENCE);
+    void fetchInitialData();
 
-		const confidence: TierlistConfidence = {
-			score: confidenceScore,
-			votesNeeded,
-			targetConfidence: TARGET_CONFIDENCE,
-		};
+    // -----------------------------------------------------------------------
+    // Realtime: ratings channel
+    //
+    // On any UPDATE to the ratings table, patch just the two changed rows
+    // into local state without re-fetching everything.
+    // -----------------------------------------------------------------------
 
-		return {
-			tiers,
-			confidence,
-			totalVotes,
-			hasSufficientData: totalVotes >= MIN_VOTES_FOR_DISPLAY,
-		};
-	}, [data, strategy]);
+    const ratingsChannel = supabase
+      .channel("tierlist:ratings")
+      .on(
+        "postgres_changes",
+        { event: "UPDATE", schema: "public", table: "ratings" },
+        (payload) => {
+          const updated = payload.new as RatingRow;
+          ratingsRef.current.set(updated.pokemon_id, updated);
 
-	return result;
+          setState((prev) => {
+            const next = prev.ratings.map((r) =>
+              r.pokemon_id === updated.pokemon_id ? updated : r,
+            );
+            return { ...prev, ratings: next };
+          });
+        },
+      )
+      .subscribe();
+
+    // -----------------------------------------------------------------------
+    // Realtime: matchups channel
+    //
+    // On any INSERT to matchups, increment the vote counter if it's not a skip.
+    // We don't need the full matchup row — just the count.
+    // -----------------------------------------------------------------------
+
+    const matchupsChannel = supabase
+      .channel("tierlist:matchups")
+      .on(
+        "postgres_changes",
+        { event: "INSERT", schema: "public", table: "matchups" },
+        (payload) => {
+          const row = payload.new as MatchupRow;
+          if (!row.skipped) {
+            setState((prev) => ({ ...prev, totalVotes: prev.totalVotes + 1 }));
+          }
+        },
+      )
+      .subscribe();
+
+    return () => {
+      cancelled = true;
+      void supabase.removeChannel(ratingsChannel);
+      void supabase.removeChannel(matchupsChannel);
+    };
+    // Re-run only when the pokemon list identity changes (practically never).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pokemon]);
+
+  // -------------------------------------------------------------------------
+  // Compute tierlist from current state (memoised)
+  // -------------------------------------------------------------------------
+
+  const result = useMemo<TierlistResult | undefined>(() => {
+    if (state.isLoading) return undefined;
+    if (state.pokemon.length === 0 || state.ratings.length === 0)
+      return undefined;
+
+    const ratingMap = new Map<number, RatingRow>(
+      state.ratings.map((r) => [r.pokemon_id, r]),
+    );
+
+    const ratedPokemon = state.pokemon.flatMap((p) => {
+      const row = ratingMap.get(p.id);
+      if (!row) return [];
+      return [
+        {
+          pokemon: p,
+          rating: {
+            pokemonId: row.pokemon_id,
+            mu: row.mu,
+            sigma: row.sigma,
+            ordinal: row.ordinal,
+            matchCount: row.match_count,
+          },
+        },
+      ];
+    });
+
+    if (ratedPokemon.length === 0) return undefined;
+
+    const tiers = computeTierlist(ratedPokemon, strategy);
+
+    const ratingsOnly = ratedPokemon.map((rp) => rp.rating);
+    const confidenceScore = globalConfidence(ratingsOnly);
+    const votesNeeded = estimateVotesNeeded(ratingsOnly, TARGET_CONFIDENCE);
+
+    const confidence: TierlistConfidence = {
+      score: confidenceScore,
+      votesNeeded,
+      targetConfidence: TARGET_CONFIDENCE,
+    };
+
+    return {
+      tiers,
+      confidence,
+      totalVotes: state.totalVotes,
+      hasSufficientData: state.totalVotes >= MIN_VOTES_FOR_DISPLAY,
+    };
+  }, [state, strategy]);
+
+  return result;
 };
 
 // ---------------------------------------------------------------------------
