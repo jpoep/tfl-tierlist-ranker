@@ -112,11 +112,9 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
       {/* Prompt */}
       <div className="text-center">
         <h2 className="text-xl font-semibold text-white/90">
-          Which is better in a draft league?
+          Welches Pokémon ist in der TFL besser?
         </h2>
-        <p className="mt-1 text-sm text-white/40">
-          Based on overall viability, not just raw stats
-        </p>
+        <p className="mt-1 text-sm text-white/40">Sei objektiv</p>
       </div>
 
       {/* Cards row */}
@@ -170,23 +168,25 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
             onClick={handleSkip}
             className="rounded-lg px-5 py-2 text-sm text-white/30 transition-colors hover:bg-white/5 hover:text-white/60 active:scale-95"
           >
-            Skip — I&apos;m not sure
+            Keine Ahnung
           </button>
         )}
 
         {isVoted && (
           <p className="text-sm text-white/40">
-            Nice pick. Next one is on the way&hellip;
+            Nice pick. Nächster kommt&hellip;
           </p>
         )}
 
         {isSkipped && (
-          <p className="text-sm text-white/40">Skipped. Moving on&hellip;</p>
+          <p className="text-sm text-white/40">
+            Skipped. Weiter geht's&hellip;
+          </p>
         )}
 
         {voteState.status === "error" && (
           <p className="text-sm text-red-400">
-            Something went wrong: {voteState.message}
+            Irgendwas ist kaputt: {voteState.message}
           </p>
         )}
       </div>
@@ -194,8 +194,8 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
       {/* Keyboard hints — only shown while idle */}
       {!isDone && (
         <div className="flex items-center gap-4 text-xs">
-          <KeyHint labels={["←", "J"]} description="left wins" />
-          <KeyHint labels={["→", "L"]} description="right wins" />
+          <KeyHint labels={["←", "J"]} description="links gewinnt" />
+          <KeyHint labels={["→", "L"]} description="rechts gewinnt" />
           <KeyHint labels={["Space"]} description="skip" />
         </div>
       )}

@@ -97,13 +97,13 @@ export const PokemonCard = ({
       {/* Types */}
       <div className="flex gap-1.5">
         <span
-          className={`rounded px-2 py-0.5 text-xs font-medium text-white ${typeColour(pokemon.type1)}`}
+          className={`rounded px-2 py-0.5 text-xs font-bold tracking-tighter w- text-white uppercase ${typeColour(pokemon.type1)}`}
         >
           {pokemon.type1}
         </span>
         {pokemon.type2 && (
           <span
-            className={`rounded px-2 py-0.5 text-xs font-medium text-white ${typeColour(pokemon.type2)}`}
+            className={`rounded px-2 py-0.5 text-xs font-bold tracking-tighter text-white uppercase ${typeColour(pokemon.type2)}`}
           >
             {pokemon.type2}
           </span>

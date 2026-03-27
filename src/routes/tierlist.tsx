@@ -21,7 +21,7 @@ function TierlistPage() {
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="h-6 w-6 animate-spin rounded-full border-2 border-white/20 border-t-white/60" />
-          <p className="text-sm text-white/30">Loading tierlist…</p>
+          <p className="text-sm text-white/30">Tierlist wird geladen</p>
         </div>
       </div>
     );
@@ -37,10 +37,10 @@ function TierlistPage() {
       {/* Page header */}
       <div className="flex flex-col gap-1">
         <h1 className="text-2xl font-black tracking-tight text-white">
-          TFL Tierlist
+          Tierlist
         </h1>
         <p className="text-sm text-white/40">
-          {totalPokemon} Pokémon ranked &middot;{" "}
+          {totalPokemon} Pokémon geranked &middot;{" "}
           {result.totalVotes.toLocaleString()} votes cast
         </p>
       </div>
