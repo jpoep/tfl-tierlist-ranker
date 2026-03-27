@@ -15,12 +15,14 @@
   "dependencies": {
     "@tanstack/react-query": "^5.95.2",
     "@tanstack/react-router": "^1.168.7",
+    "clsx": "^2.1.1",
     "dexie": "^4.4.1",
     "dexie-react-hooks": "^4.4.0",
     "effect": "^3.21.0",
     "openskill": "^4.1.1",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.9",
