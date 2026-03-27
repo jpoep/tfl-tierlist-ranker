@@ -1,5 +1,5 @@
 import { Effect } from "effect";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { SelectedPair } from "@/ranking/pairSelection";
 import { recordSkip, recordVote } from "@/services/rankingService";
 import { PokemonCard } from "./PokemonCard";
@@ -13,6 +13,15 @@ type VoteState =
 	| { status: "voted"; winnerId: number }
 	| { status: "skipped" }
 	| { status: "error"; message: string };
+
+const KeyHint = ({ label, description }: { label: string; description: string }) => (
+	<span className="flex items-center gap-1.5">
+		<kbd className="inline-flex h-5 min-w-5 items-center justify-center rounded border border-white/20 bg-white/10 px-1 font-mono text-[10px] text-white/50">
+			{label}
+		</kbd>
+		<span className="text-white/25">{description}</span>
+	</span>
+);
 
 export const ComparisonView = ({ pair }: ComparisonViewProps) => {
 	const [voteState, setVoteState] = useState<VoteState>({ status: "idle" });
@@ -49,6 +58,34 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
 			},
 		);
 	}, [voteState.status, pair.left.pokemon.id, pair.right.pokemon.id]);
+
+	// Keyboard navigation — only active while idle so it can't double-fire
+	useEffect(() => {
+		const onKeyDown = (e: KeyboardEvent) => {
+			// Don't steal input events from focused form elements
+			if (
+				e.target instanceof HTMLInputElement ||
+				e.target instanceof HTMLTextAreaElement ||
+				e.target instanceof HTMLSelectElement
+			) {
+				return;
+			}
+
+			if (e.key === "ArrowLeft") {
+				e.preventDefault();
+				handleVote(pair.left.pokemon.id, pair.right.pokemon.id);
+			} else if (e.key === "ArrowRight") {
+				e.preventDefault();
+				handleVote(pair.right.pokemon.id, pair.left.pokemon.id);
+			} else if (e.key === " ") {
+				e.preventDefault();
+				handleSkip();
+			}
+		};
+
+		window.addEventListener("keydown", onKeyDown);
+		return () => window.removeEventListener("keydown", onKeyDown);
+	}, [handleVote, handleSkip, pair.left.pokemon.id, pair.right.pokemon.id]);
 
 	const { left, right } = pair;
 
@@ -110,19 +147,24 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
 				)}
 
 				{isVoted && (
-					<p className="animate-fade-in text-sm text-white/40">
-						Nice pick. Next one is on the way&hellip;
-					</p>
+					<p className="text-sm text-white/40">Nice pick. Next one is on the way&hellip;</p>
 				)}
 
-				{isSkipped && (
-					<p className="animate-fade-in text-sm text-white/40">Skipped. Moving on&hellip;</p>
-				)}
+				{isSkipped && <p className="text-sm text-white/40">Skipped. Moving on&hellip;</p>}
 
 				{voteState.status === "error" && (
 					<p className="text-sm text-red-400">Something went wrong: {voteState.message}</p>
 				)}
 			</div>
+
+			{/* Keyboard hints — only shown while idle */}
+			{!isDone && (
+				<div className="flex items-center gap-4 text-xs">
+					<KeyHint label="←" description="left wins" />
+					<KeyHint label="→" description="right wins" />
+					<KeyHint label="Space" description="skip" />
+				</div>
+			)}
 		</div>
 	);
 };
