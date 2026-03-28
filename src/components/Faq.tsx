@@ -11,19 +11,9 @@ const FAQ_ITEMS: { question: string; answer: string }[] = [
       "Wir brauchen gut 9000 Votes, also votet gerne so viel wie ihr schafft!",
   },
   {
-    question: "Da sind 2 Shitmons",
-    answer:
-      "Dann ist es nicht so wichtig. Sie werden eh beide im D landen, pick nach Gefühl.",
-  },
-  {
     question: "Habe mich verklickt",
     answer:
       "Pech, aber sollte nicht so schlimm sein, wenn wir genug Stimmen sammeln können. Aber bitte darauf achten, habe keine Lust, undo zu implementieren :D",
-  },
-  {
-    question: "Glumanda im A???",
-    answer:
-      "Geduld. Am Anfang macht alles gar keinen Sinn. Erst wenn der Balken unten nicht mehr rot ist, formt sich langsam eine halbwegs sinnvolle Tierlist. Je mehr ihr votet, desto besser wird sie.",
   },
   {
     question: "Was heißt Fixed %, Std Dev und K-Means?",
