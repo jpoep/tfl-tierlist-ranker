@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { ConfidenceBar } from "@/components/ConfidenceBar";
 import { TierlistPreview } from "@/components/TierlistPreview";
 import { usePokemon } from "@/hooks/usePokemon";
 import { useTierlist } from "@/hooks/useTierlist";
