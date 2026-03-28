@@ -17,6 +17,8 @@ export interface Pokemon {
 	type2: string | null;
 	/** Base stat total */
 	bst: number;
+	/** True if this Pokémon has no further evolutions (i.e. it is the final stage) */
+	isFinalEvo: boolean;
 }
 
 /**

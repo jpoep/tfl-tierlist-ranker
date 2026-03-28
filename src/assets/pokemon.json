@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-03-27T21:11:12.171Z",
+	"generatedAt": "2026-03-28T01:38:14.230Z",
 	"count": 664,
 	"pokemon": [
 		{
@@ -9,7 +9,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 318
+			"bst": 318,
+			"isFinalEvo": false
 		},
 		{
 			"id": 2,
@@ -18,7 +19,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 3,
@@ -27,7 +29,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 4,
@@ -36,7 +39,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 309
+			"bst": 309,
+			"isFinalEvo": false
 		},
 		{
 			"id": 5,
@@ -45,7 +49,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 6,
@@ -54,7 +59,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
 			"type1": "fire",
 			"type2": "flying",
-			"bst": 534
+			"bst": 534,
+			"isFinalEvo": true
 		},
 		{
 			"id": 7,
@@ -63,7 +69,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 314
+			"bst": 314,
+			"isFinalEvo": false
 		},
 		{
 			"id": 8,
@@ -72,7 +79,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 9,
@@ -81,7 +89,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 23,
@@ -90,7 +99,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 288
+			"bst": 288,
+			"isFinalEvo": false
 		},
 		{
 			"id": 24,
@@ -99,7 +109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 448
+			"bst": 448,
+			"isFinalEvo": true
 		},
 		{
 			"id": 25,
@@ -108,7 +119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 26,
@@ -117,7 +129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 27,
@@ -126,7 +139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 28,
@@ -135,7 +149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": true
 		},
 		{
 			"id": 35,
@@ -144,7 +159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 323
+			"bst": 323,
+			"isFinalEvo": false
 		},
 		{
 			"id": 36,
@@ -153,7 +169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 483
+			"bst": 483,
+			"isFinalEvo": true
 		},
 		{
 			"id": 37,
@@ -162,7 +179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 299
+			"bst": 299,
+			"isFinalEvo": false
 		},
 		{
 			"id": 38,
@@ -171,7 +189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 505
+			"bst": 505,
+			"isFinalEvo": true
 		},
 		{
 			"id": 39,
@@ -180,7 +199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
 			"type1": "normal",
 			"type2": "fairy",
-			"bst": 270
+			"bst": 270,
+			"isFinalEvo": false
 		},
 		{
 			"id": 40,
@@ -189,7 +209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
 			"type1": "normal",
 			"type2": "fairy",
-			"bst": 435
+			"bst": 435,
+			"isFinalEvo": true
 		},
 		{
 			"id": 43,
@@ -198,7 +219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 44,
@@ -207,7 +229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 395
+			"bst": 395,
+			"isFinalEvo": false
 		},
 		{
 			"id": 45,
@@ -216,7 +239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 48,
@@ -225,7 +249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
 			"type1": "bug",
 			"type2": "poison",
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 49,
@@ -234,7 +259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
 			"type1": "bug",
 			"type2": "poison",
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": true
 		},
 		{
 			"id": 50,
@@ -243,7 +269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 265
+			"bst": 265,
+			"isFinalEvo": false
 		},
 		{
 			"id": 51,
@@ -252,7 +279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 425
+			"bst": 425,
+			"isFinalEvo": true
 		},
 		{
 			"id": 52,
@@ -261,7 +289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 53,
@@ -270,7 +299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": true
 		},
 		{
 			"id": 54,
@@ -279,7 +309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 55,
@@ -288,7 +319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 56,
@@ -297,7 +329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 57,
@@ -306,7 +339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": false
 		},
 		{
 			"id": 58,
@@ -315,7 +349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 59,
@@ -324,7 +359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 555
+			"bst": 555,
+			"isFinalEvo": true
 		},
 		{
 			"id": 60,
@@ -333,7 +369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 61,
@@ -342,7 +379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 385
+			"bst": 385,
+			"isFinalEvo": false
 		},
 		{
 			"id": 62,
@@ -351,7 +389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
 			"type1": "water",
 			"type2": "fighting",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 69,
@@ -360,7 +399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 70,
@@ -369,7 +409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 390
+			"bst": 390,
+			"isFinalEvo": false
 		},
 		{
 			"id": 71,
@@ -378,7 +419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 72,
@@ -387,7 +429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
 			"type1": "water",
 			"type2": "poison",
-			"bst": 335
+			"bst": 335,
+			"isFinalEvo": false
 		},
 		{
 			"id": 73,
@@ -396,7 +439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
 			"type1": "water",
 			"type2": "poison",
-			"bst": 515
+			"bst": 515,
+			"isFinalEvo": true
 		},
 		{
 			"id": 74,
@@ -405,7 +449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
 			"type1": "rock",
 			"type2": "ground",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 75,
@@ -414,7 +459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
 			"type1": "rock",
 			"type2": "ground",
-			"bst": 390
+			"bst": 390,
+			"isFinalEvo": false
 		},
 		{
 			"id": 76,
@@ -423,7 +469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
 			"type1": "rock",
 			"type2": "ground",
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 79,
@@ -432,7 +479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
 			"type1": "water",
 			"type2": "psychic",
-			"bst": 315
+			"bst": 315,
+			"isFinalEvo": false
 		},
 		{
 			"id": 80,
@@ -441,7 +489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
 			"type1": "water",
 			"type2": "psychic",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 81,
@@ -450,7 +499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
 			"type1": "electric",
 			"type2": "steel",
-			"bst": 325
+			"bst": 325,
+			"isFinalEvo": false
 		},
 		{
 			"id": 82,
@@ -459,7 +509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
 			"type1": "electric",
 			"type2": "steel",
-			"bst": 465
+			"bst": 465,
+			"isFinalEvo": false
 		},
 		{
 			"id": 84,
@@ -468,7 +519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 85,
@@ -477,7 +529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 86,
@@ -486,7 +539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 325
+			"bst": 325,
+			"isFinalEvo": false
 		},
 		{
 			"id": 87,
@@ -495,7 +549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
 			"type1": "water",
 			"type2": "ice",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 88,
@@ -504,7 +559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 325
+			"bst": 325,
+			"isFinalEvo": false
 		},
 		{
 			"id": 89,
@@ -513,7 +569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 90,
@@ -522,7 +579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 91,
@@ -531,7 +589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
 			"type1": "water",
 			"type2": "ice",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 92,
@@ -540,7 +599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
 			"type1": "ghost",
 			"type2": "poison",
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 93,
@@ -549,7 +609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
 			"type1": "ghost",
 			"type2": "poison",
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 94,
@@ -558,7 +619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
 			"type1": "ghost",
 			"type2": "poison",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 96,
@@ -567,7 +629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 328
+			"bst": 328,
+			"isFinalEvo": false
 		},
 		{
 			"id": 97,
@@ -576,7 +639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 483
+			"bst": 483,
+			"isFinalEvo": true
 		},
 		{
 			"id": 100,
@@ -585,7 +649,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 101,
@@ -594,7 +659,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 102,
@@ -603,7 +669,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
 			"type1": "grass",
 			"type2": "psychic",
-			"bst": 325
+			"bst": 325,
+			"isFinalEvo": false
 		},
 		{
 			"id": 103,
@@ -612,7 +679,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
 			"type1": "grass",
 			"type2": "psychic",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 106,
@@ -621,7 +689,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": true
 		},
 		{
 			"id": 107,
@@ -630,7 +699,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": true
 		},
 		{
 			"id": 109,
@@ -639,7 +709,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 110,
@@ -648,7 +719,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 111,
@@ -657,7 +729,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
 			"type1": "ground",
 			"type2": "rock",
-			"bst": 345
+			"bst": 345,
+			"isFinalEvo": false
 		},
 		{
 			"id": 112,
@@ -666,7 +739,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
 			"type1": "ground",
 			"type2": "rock",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": false
 		},
 		{
 			"id": 113,
@@ -675,7 +749,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": false
 		},
 		{
 			"id": 116,
@@ -684,7 +759,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 295
+			"bst": 295,
+			"isFinalEvo": false
 		},
 		{
 			"id": 117,
@@ -693,7 +769,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": false
 		},
 		{
 			"id": 123,
@@ -702,7 +779,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": false
 		},
 		{
 			"id": 125,
@@ -711,7 +789,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": false
 		},
 		{
 			"id": 126,
@@ -720,7 +799,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": false
 		},
 		{
 			"id": 128,
@@ -729,7 +809,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 129,
@@ -738,7 +819,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 200
+			"bst": 200,
+			"isFinalEvo": false
 		},
 		{
 			"id": 130,
@@ -747,7 +829,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
 			"type1": "water",
 			"type2": "flying",
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 131,
@@ -756,7 +839,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
 			"type1": "water",
 			"type2": "ice",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 132,
@@ -765,7 +849,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 288
+			"bst": 288,
+			"isFinalEvo": true
 		},
 		{
 			"id": 133,
@@ -774,7 +859,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 325
+			"bst": 325,
+			"isFinalEvo": false
 		},
 		{
 			"id": 134,
@@ -783,7 +869,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 135,
@@ -792,7 +879,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 136,
@@ -801,7 +889,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 137,
@@ -810,7 +899,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 395
+			"bst": 395,
+			"isFinalEvo": false
 		},
 		{
 			"id": 143,
@@ -819,7 +909,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 147,
@@ -828,7 +919,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 148,
@@ -837,7 +929,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 149,
@@ -846,7 +939,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
 			"type1": "dragon",
 			"type2": "flying",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 152,
@@ -855,7 +949,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 318
+			"bst": 318,
+			"isFinalEvo": false
 		},
 		{
 			"id": 153,
@@ -864,7 +959,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 154,
@@ -873,7 +969,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 155,
@@ -882,7 +979,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 309
+			"bst": 309,
+			"isFinalEvo": false
 		},
 		{
 			"id": 156,
@@ -891,7 +989,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 157,
@@ -900,7 +999,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 534
+			"bst": 534,
+			"isFinalEvo": true
 		},
 		{
 			"id": 158,
@@ -909,7 +1009,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 314
+			"bst": 314,
+			"isFinalEvo": false
 		},
 		{
 			"id": 159,
@@ -918,7 +1019,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 160,
@@ -927,7 +1029,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 161,
@@ -936,7 +1039,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 215
+			"bst": 215,
+			"isFinalEvo": false
 		},
 		{
 			"id": 162,
@@ -945,7 +1049,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 415
+			"bst": 415,
+			"isFinalEvo": true
 		},
 		{
 			"id": 163,
@@ -954,7 +1059,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 262
+			"bst": 262,
+			"isFinalEvo": false
 		},
 		{
 			"id": 164,
@@ -963,7 +1069,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 452
+			"bst": 452,
+			"isFinalEvo": true
 		},
 		{
 			"id": 167,
@@ -972,7 +1079,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
 			"type1": "bug",
 			"type2": "poison",
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": false
 		},
 		{
 			"id": 168,
@@ -981,7 +1089,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
 			"type1": "bug",
 			"type2": "poison",
-			"bst": 400
+			"bst": 400,
+			"isFinalEvo": true
 		},
 		{
 			"id": 170,
@@ -990,7 +1099,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
 			"type1": "water",
 			"type2": "electric",
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 171,
@@ -999,7 +1109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
 			"type1": "water",
 			"type2": "electric",
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 172,
@@ -1008,7 +1119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 205
+			"bst": 205,
+			"isFinalEvo": false
 		},
 		{
 			"id": 173,
@@ -1017,7 +1129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 218
+			"bst": 218,
+			"isFinalEvo": false
 		},
 		{
 			"id": 174,
@@ -1026,7 +1139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
 			"type1": "normal",
 			"type2": "fairy",
-			"bst": 210
+			"bst": 210,
+			"isFinalEvo": false
 		},
 		{
 			"id": 179,
@@ -1035,7 +1149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 180,
@@ -1044,7 +1159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 365
+			"bst": 365,
+			"isFinalEvo": false
 		},
 		{
 			"id": 181,
@@ -1053,7 +1169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 182,
@@ -1062,7 +1179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 183,
@@ -1071,7 +1189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
 			"type1": "water",
 			"type2": "fairy",
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": false
 		},
 		{
 			"id": 184,
@@ -1080,7 +1199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
 			"type1": "water",
 			"type2": "fairy",
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": true
 		},
 		{
 			"id": 185,
@@ -1089,7 +1209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": true
 		},
 		{
 			"id": 186,
@@ -1098,7 +1219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 187,
@@ -1107,7 +1229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
 			"type1": "grass",
 			"type2": "flying",
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": false
 		},
 		{
 			"id": 188,
@@ -1116,7 +1239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
 			"type1": "grass",
 			"type2": "flying",
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 189,
@@ -1125,7 +1249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
 			"type1": "grass",
 			"type2": "flying",
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 190,
@@ -1134,7 +1259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 360
+			"bst": 360,
+			"isFinalEvo": false
 		},
 		{
 			"id": 191,
@@ -1143,7 +1269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 180
+			"bst": 180,
+			"isFinalEvo": false
 		},
 		{
 			"id": 192,
@@ -1152,7 +1279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 425
+			"bst": 425,
+			"isFinalEvo": true
 		},
 		{
 			"id": 193,
@@ -1161,7 +1289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 390
+			"bst": 390,
+			"isFinalEvo": false
 		},
 		{
 			"id": 194,
@@ -1170,7 +1299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 210
+			"bst": 210,
+			"isFinalEvo": false
 		},
 		{
 			"id": 195,
@@ -1179,7 +1309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": true
 		},
 		{
 			"id": 196,
@@ -1188,7 +1319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 197,
@@ -1197,7 +1329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 198,
@@ -1206,7 +1339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
 			"type1": "dark",
 			"type2": "flying",
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 199,
@@ -1215,7 +1349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
 			"type1": "water",
 			"type2": "psychic",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 200,
@@ -1224,7 +1359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 435
+			"bst": 435,
+			"isFinalEvo": false
 		},
 		{
 			"id": 203,
@@ -1233,7 +1369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
 			"type1": "normal",
 			"type2": "psychic",
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": false
 		},
 		{
 			"id": 204,
@@ -1242,7 +1379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 205,
@@ -1251,7 +1389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
 			"type1": "bug",
 			"type2": "steel",
-			"bst": 465
+			"bst": 465,
+			"isFinalEvo": true
 		},
 		{
 			"id": 206,
@@ -1260,7 +1399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 415
+			"bst": 415,
+			"isFinalEvo": false
 		},
 		{
 			"id": 207,
@@ -1269,7 +1409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
 			"type1": "ground",
 			"type2": "flying",
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": false
 		},
 		{
 			"id": 209,
@@ -1278,7 +1419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 210,
@@ -1287,7 +1429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": true
 		},
 		{
 			"id": 211,
@@ -1296,7 +1439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
 			"type1": "water",
 			"type2": "poison",
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": false
 		},
 		{
 			"id": 212,
@@ -1305,7 +1449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
 			"type1": "bug",
 			"type2": "steel",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 214,
@@ -1314,7 +1459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
 			"type1": "bug",
 			"type2": "fighting",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 215,
@@ -1323,7 +1469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
 			"type1": "dark",
 			"type2": "ice",
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": false
 		},
 		{
 			"id": 216,
@@ -1332,7 +1479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 217,
@@ -1341,7 +1489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": false
 		},
 		{
 			"id": 218,
@@ -1350,7 +1499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": false
 		},
 		{
 			"id": 219,
@@ -1359,7 +1509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
 			"type1": "fire",
 			"type2": "rock",
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": true
 		},
 		{
 			"id": 220,
@@ -1368,7 +1519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
 			"type1": "ice",
 			"type2": "ground",
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": false
 		},
 		{
 			"id": 221,
@@ -1377,7 +1529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
 			"type1": "ice",
 			"type2": "ground",
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": false
 		},
 		{
 			"id": 225,
@@ -1386,7 +1539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
 			"type1": "ice",
 			"type2": "flying",
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": true
 		},
 		{
 			"id": 227,
@@ -1395,7 +1549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
 			"type1": "steel",
 			"type2": "flying",
-			"bst": 465
+			"bst": 465,
+			"isFinalEvo": true
 		},
 		{
 			"id": 228,
@@ -1404,7 +1559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
 			"type1": "dark",
 			"type2": "fire",
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 229,
@@ -1413,7 +1569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
 			"type1": "dark",
 			"type2": "fire",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 230,
@@ -1422,7 +1579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
 			"type1": "water",
 			"type2": "dragon",
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 231,
@@ -1431,7 +1589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 232,
@@ -1440,7 +1599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 233,
@@ -1449,7 +1609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 515
+			"bst": 515,
+			"isFinalEvo": false
 		},
 		{
 			"id": 234,
@@ -1458,7 +1619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 465
+			"bst": 465,
+			"isFinalEvo": false
 		},
 		{
 			"id": 235,
@@ -1467,7 +1629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": true
 		},
 		{
 			"id": 236,
@@ -1476,7 +1639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 210
+			"bst": 210,
+			"isFinalEvo": false
 		},
 		{
 			"id": 237,
@@ -1485,7 +1649,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": true
 		},
 		{
 			"id": 239,
@@ -1494,7 +1659,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 360
+			"bst": 360,
+			"isFinalEvo": false
 		},
 		{
 			"id": 240,
@@ -1503,7 +1669,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 365
+			"bst": 365,
+			"isFinalEvo": false
 		},
 		{
 			"id": 242,
@@ -1512,7 +1679,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 246,
@@ -1521,7 +1689,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
 			"type1": "rock",
 			"type2": "ground",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 247,
@@ -1530,7 +1699,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
 			"type1": "rock",
 			"type2": "ground",
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 248,
@@ -1539,7 +1709,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
 			"type1": "rock",
 			"type2": "dark",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 252,
@@ -1548,7 +1719,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 253,
@@ -1557,7 +1729,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 254,
@@ -1566,7 +1739,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 255,
@@ -1575,7 +1749,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 256,
@@ -1584,7 +1759,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png",
 			"type1": "fire",
 			"type2": "fighting",
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 257,
@@ -1593,7 +1769,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png",
 			"type1": "fire",
 			"type2": "fighting",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 258,
@@ -1602,7 +1779,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 259,
@@ -1611,7 +1789,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 260,
@@ -1620,7 +1799,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 261,
@@ -1629,7 +1809,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 220
+			"bst": 220,
+			"isFinalEvo": false
 		},
 		{
 			"id": 262,
@@ -1638,7 +1819,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/262.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": true
 		},
 		{
 			"id": 270,
@@ -1647,7 +1829,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
 			"type1": "water",
 			"type2": "grass",
-			"bst": 220
+			"bst": 220,
+			"isFinalEvo": false
 		},
 		{
 			"id": 271,
@@ -1656,7 +1839,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png",
 			"type1": "water",
 			"type2": "grass",
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 272,
@@ -1665,7 +1849,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png",
 			"type1": "water",
 			"type2": "grass",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 273,
@@ -1674,7 +1859,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 220
+			"bst": 220,
+			"isFinalEvo": false
 		},
 		{
 			"id": 274,
@@ -1683,7 +1869,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/274.png",
 			"type1": "grass",
 			"type2": "dark",
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 275,
@@ -1692,7 +1879,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png",
 			"type1": "grass",
 			"type2": "dark",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 278,
@@ -1701,7 +1889,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png",
 			"type1": "water",
 			"type2": "flying",
-			"bst": 270
+			"bst": 270,
+			"isFinalEvo": false
 		},
 		{
 			"id": 279,
@@ -1710,7 +1899,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
 			"type1": "water",
 			"type2": "flying",
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": true
 		},
 		{
 			"id": 280,
@@ -1719,7 +1909,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png",
 			"type1": "psychic",
 			"type2": "fairy",
-			"bst": 198
+			"bst": 198,
+			"isFinalEvo": false
 		},
 		{
 			"id": 281,
@@ -1728,7 +1919,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png",
 			"type1": "psychic",
 			"type2": "fairy",
-			"bst": 278
+			"bst": 278,
+			"isFinalEvo": false
 		},
 		{
 			"id": 282,
@@ -1737,7 +1929,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
 			"type1": "psychic",
 			"type2": "fairy",
-			"bst": 518
+			"bst": 518,
+			"isFinalEvo": true
 		},
 		{
 			"id": 283,
@@ -1746,7 +1939,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png",
 			"type1": "bug",
 			"type2": "water",
-			"bst": 269
+			"bst": 269,
+			"isFinalEvo": false
 		},
 		{
 			"id": 284,
@@ -1755,7 +1949,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/284.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 454
+			"bst": 454,
+			"isFinalEvo": true
 		},
 		{
 			"id": 285,
@@ -1764,7 +1959,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 295
+			"bst": 295,
+			"isFinalEvo": false
 		},
 		{
 			"id": 286,
@@ -1773,7 +1969,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png",
 			"type1": "grass",
 			"type2": "fighting",
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 287,
@@ -1782,7 +1979,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/287.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 288,
@@ -1791,7 +1989,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": false
 		},
 		{
 			"id": 289,
@@ -1800,7 +1999,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 670
+			"bst": 670,
+			"isFinalEvo": true
 		},
 		{
 			"id": 296,
@@ -1809,7 +2009,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 237
+			"bst": 237,
+			"isFinalEvo": false
 		},
 		{
 			"id": 297,
@@ -1818,7 +2019,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 474
+			"bst": 474,
+			"isFinalEvo": true
 		},
 		{
 			"id": 298,
@@ -1827,7 +2029,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png",
 			"type1": "normal",
 			"type2": "fairy",
-			"bst": 190
+			"bst": 190,
+			"isFinalEvo": false
 		},
 		{
 			"id": 299,
@@ -1836,7 +2039,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 375
+			"bst": 375,
+			"isFinalEvo": false
 		},
 		{
 			"id": 302,
@@ -1845,7 +2049,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
 			"type1": "dark",
 			"type2": "ghost",
-			"bst": 380
+			"bst": 380,
+			"isFinalEvo": true
 		},
 		{
 			"id": 307,
@@ -1854,7 +2059,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png",
 			"type1": "fighting",
 			"type2": "psychic",
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 308,
@@ -1863,7 +2069,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png",
 			"type1": "fighting",
 			"type2": "psychic",
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": true
 		},
 		{
 			"id": 311,
@@ -1872,7 +2079,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": true
 		},
 		{
 			"id": 312,
@@ -1881,7 +2089,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": true
 		},
 		{
 			"id": 313,
@@ -1890,7 +2099,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": true
 		},
 		{
 			"id": 314,
@@ -1899,7 +2109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": true
 		},
 		{
 			"id": 316,
@@ -1908,7 +2119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 302
+			"bst": 302,
+			"isFinalEvo": false
 		},
 		{
 			"id": 317,
@@ -1917,7 +2129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 467
+			"bst": 467,
+			"isFinalEvo": true
 		},
 		{
 			"id": 322,
@@ -1926,7 +2139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/322.png",
 			"type1": "fire",
 			"type2": "ground",
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 323,
@@ -1935,7 +2149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png",
 			"type1": "fire",
 			"type2": "ground",
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 324,
@@ -1944,7 +2159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 325,
@@ -1953,7 +2169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/325.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 326,
@@ -1962,7 +2179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 328,
@@ -1971,7 +2189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 329,
@@ -1980,7 +2199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/329.png",
 			"type1": "ground",
 			"type2": "dragon",
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 330,
@@ -1989,7 +2209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
 			"type1": "ground",
 			"type2": "dragon",
-			"bst": 520
+			"bst": 520,
+			"isFinalEvo": true
 		},
 		{
 			"id": 331,
@@ -1998,7 +2219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 335
+			"bst": 335,
+			"isFinalEvo": false
 		},
 		{
 			"id": 332,
@@ -2007,7 +2229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png",
 			"type1": "grass",
 			"type2": "dark",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 333,
@@ -2016,7 +2239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 334,
@@ -2025,7 +2249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
 			"type1": "dragon",
 			"type2": "flying",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 335,
@@ -2034,7 +2259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 458
+			"bst": 458,
+			"isFinalEvo": true
 		},
 		{
 			"id": 336,
@@ -2043,7 +2269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png",
 			"type1": "poison",
 			"type2": null,
-			"bst": 458
+			"bst": 458,
+			"isFinalEvo": true
 		},
 		{
 			"id": 339,
@@ -2052,7 +2279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 288
+			"bst": 288,
+			"isFinalEvo": false
 		},
 		{
 			"id": 340,
@@ -2061,7 +2289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 468
+			"bst": 468,
+			"isFinalEvo": true
 		},
 		{
 			"id": 341,
@@ -2070,7 +2299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 308
+			"bst": 308,
+			"isFinalEvo": false
 		},
 		{
 			"id": 342,
@@ -2079,7 +2309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png",
 			"type1": "water",
 			"type2": "dark",
-			"bst": 468
+			"bst": 468,
+			"isFinalEvo": true
 		},
 		{
 			"id": 349,
@@ -2088,7 +2319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 200
+			"bst": 200,
+			"isFinalEvo": false
 		},
 		{
 			"id": 350,
@@ -2097,7 +2329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 353,
@@ -2106,7 +2339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 295
+			"bst": 295,
+			"isFinalEvo": false
 		},
 		{
 			"id": 354,
@@ -2115,7 +2349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": true
 		},
 		{
 			"id": 355,
@@ -2124,7 +2359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 295
+			"bst": 295,
+			"isFinalEvo": false
 		},
 		{
 			"id": 356,
@@ -2133,7 +2369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": false
 		},
 		{
 			"id": 357,
@@ -2142,7 +2379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png",
 			"type1": "grass",
 			"type2": "flying",
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 358,
@@ -2151,7 +2389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/358.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 455
+			"bst": 455,
+			"isFinalEvo": true
 		},
 		{
 			"id": 361,
@@ -2160,7 +2399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 362,
@@ -2169,7 +2409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 370,
@@ -2178,7 +2419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": true
 		},
 		{
 			"id": 371,
@@ -2187,7 +2429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 372,
@@ -2196,7 +2439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/372.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 373,
@@ -2205,7 +2449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png",
 			"type1": "dragon",
 			"type2": "flying",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 374,
@@ -2214,7 +2459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png",
 			"type1": "steel",
 			"type2": "psychic",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 375,
@@ -2223,7 +2469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png",
 			"type1": "steel",
 			"type2": "psychic",
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 376,
@@ -2232,7 +2479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png",
 			"type1": "steel",
 			"type2": "psychic",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 387,
@@ -2241,7 +2489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 318
+			"bst": 318,
+			"isFinalEvo": false
 		},
 		{
 			"id": 388,
@@ -2250,7 +2499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 389,
@@ -2259,7 +2509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png",
 			"type1": "grass",
 			"type2": "ground",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 390,
@@ -2268,7 +2519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 309
+			"bst": 309,
+			"isFinalEvo": false
 		},
 		{
 			"id": 391,
@@ -2277,7 +2529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png",
 			"type1": "fire",
 			"type2": "fighting",
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 392,
@@ -2286,7 +2539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
 			"type1": "fire",
 			"type2": "fighting",
-			"bst": 534
+			"bst": 534,
+			"isFinalEvo": true
 		},
 		{
 			"id": 393,
@@ -2295,7 +2549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 314
+			"bst": 314,
+			"isFinalEvo": false
 		},
 		{
 			"id": 394,
@@ -2304,7 +2559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 395,
@@ -2313,7 +2569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png",
 			"type1": "water",
 			"type2": "steel",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 396,
@@ -2322,7 +2579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 245
+			"bst": 245,
+			"isFinalEvo": false
 		},
 		{
 			"id": 397,
@@ -2331,7 +2589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 398,
@@ -2340,7 +2599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 401,
@@ -2349,7 +2609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 194
+			"bst": 194,
+			"isFinalEvo": false
 		},
 		{
 			"id": 402,
@@ -2358,7 +2619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 384
+			"bst": 384,
+			"isFinalEvo": true
 		},
 		{
 			"id": 403,
@@ -2367,7 +2629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 263
+			"bst": 263,
+			"isFinalEvo": false
 		},
 		{
 			"id": 404,
@@ -2376,7 +2639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 363
+			"bst": 363,
+			"isFinalEvo": false
 		},
 		{
 			"id": 405,
@@ -2385,7 +2649,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 523
+			"bst": 523,
+			"isFinalEvo": true
 		},
 		{
 			"id": 408,
@@ -2394,7 +2659,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 409,
@@ -2403,7 +2669,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 410,
@@ -2412,7 +2679,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
 			"type1": "rock",
 			"type2": "steel",
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 411,
@@ -2421,7 +2689,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png",
 			"type1": "rock",
 			"type2": "steel",
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 415,
@@ -2430,7 +2699,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 244
+			"bst": 244,
+			"isFinalEvo": false
 		},
 		{
 			"id": 416,
@@ -2439,7 +2709,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 474
+			"bst": 474,
+			"isFinalEvo": true
 		},
 		{
 			"id": 417,
@@ -2448,7 +2719,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": true
 		},
 		{
 			"id": 418,
@@ -2457,7 +2729,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 419,
@@ -2466,7 +2739,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 422,
@@ -2475,7 +2749,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 325
+			"bst": 325,
+			"isFinalEvo": false
 		},
 		{
 			"id": 423,
@@ -2484,7 +2759,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
 			"type1": "water",
 			"type2": "ground",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 424,
@@ -2493,7 +2769,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 482
+			"bst": 482,
+			"isFinalEvo": true
 		},
 		{
 			"id": 425,
@@ -2502,7 +2779,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png",
 			"type1": "ghost",
 			"type2": "flying",
-			"bst": 348
+			"bst": 348,
+			"isFinalEvo": false
 		},
 		{
 			"id": 426,
@@ -2511,7 +2789,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png",
 			"type1": "ghost",
 			"type2": "flying",
-			"bst": 498
+			"bst": 498,
+			"isFinalEvo": true
 		},
 		{
 			"id": 429,
@@ -2520,7 +2799,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 430,
@@ -2529,7 +2809,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
 			"type1": "dark",
 			"type2": "flying",
-			"bst": 505
+			"bst": 505,
+			"isFinalEvo": true
 		},
 		{
 			"id": 433,
@@ -2538,7 +2819,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 285
+			"bst": 285,
+			"isFinalEvo": false
 		},
 		{
 			"id": 434,
@@ -2547,7 +2829,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png",
 			"type1": "poison",
 			"type2": "dark",
-			"bst": 329
+			"bst": 329,
+			"isFinalEvo": false
 		},
 		{
 			"id": 435,
@@ -2556,7 +2839,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png",
 			"type1": "poison",
 			"type2": "dark",
-			"bst": 479
+			"bst": 479,
+			"isFinalEvo": true
 		},
 		{
 			"id": 436,
@@ -2565,7 +2849,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png",
 			"type1": "steel",
 			"type2": "psychic",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 437,
@@ -2574,7 +2859,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png",
 			"type1": "steel",
 			"type2": "psychic",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 438,
@@ -2583,7 +2869,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 440,
@@ -2592,7 +2879,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 220
+			"bst": 220,
+			"isFinalEvo": false
 		},
 		{
 			"id": 442,
@@ -2601,7 +2889,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
 			"type1": "ghost",
 			"type2": "dark",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 443,
@@ -2610,7 +2899,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png",
 			"type1": "dragon",
 			"type2": "ground",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 444,
@@ -2619,7 +2909,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png",
 			"type1": "dragon",
 			"type2": "ground",
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 445,
@@ -2628,7 +2919,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
 			"type1": "dragon",
 			"type2": "ground",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 446,
@@ -2637,7 +2929,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 390
+			"bst": 390,
+			"isFinalEvo": false
 		},
 		{
 			"id": 447,
@@ -2646,7 +2939,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 285
+			"bst": 285,
+			"isFinalEvo": false
 		},
 		{
 			"id": 448,
@@ -2655,7 +2949,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
 			"type1": "fighting",
 			"type2": "steel",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 449,
@@ -2664,7 +2959,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 450,
@@ -2673,7 +2969,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 453,
@@ -2682,7 +2979,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png",
 			"type1": "poison",
 			"type2": "fighting",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 454,
@@ -2691,7 +2989,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png",
 			"type1": "poison",
 			"type2": "fighting",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 456,
@@ -2700,7 +2999,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 457,
@@ -2709,7 +3009,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 459,
@@ -2718,7 +3019,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
 			"type1": "grass",
 			"type2": "ice",
-			"bst": 334
+			"bst": 334,
+			"isFinalEvo": false
 		},
 		{
 			"id": 460,
@@ -2727,7 +3029,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png",
 			"type1": "grass",
 			"type2": "ice",
-			"bst": 494
+			"bst": 494,
+			"isFinalEvo": true
 		},
 		{
 			"id": 461,
@@ -2736,7 +3039,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png",
 			"type1": "dark",
 			"type2": "ice",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 462,
@@ -2745,7 +3049,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png",
 			"type1": "electric",
 			"type2": "steel",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 464,
@@ -2754,7 +3059,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
 			"type1": "ground",
 			"type2": "rock",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 466,
@@ -2763,7 +3069,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 467,
@@ -2772,7 +3079,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 469,
@@ -2781,7 +3089,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 515
+			"bst": 515,
+			"isFinalEvo": true
 		},
 		{
 			"id": 470,
@@ -2790,7 +3099,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 471,
@@ -2799,7 +3109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 472,
@@ -2808,7 +3119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
 			"type1": "ground",
 			"type2": "flying",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 473,
@@ -2817,7 +3129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png",
 			"type1": "ice",
 			"type2": "ground",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 474,
@@ -2826,7 +3139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 475,
@@ -2835,7 +3149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png",
 			"type1": "psychic",
 			"type2": "fighting",
-			"bst": 518
+			"bst": 518,
+			"isFinalEvo": true
 		},
 		{
 			"id": 476,
@@ -2844,7 +3159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png",
 			"type1": "rock",
 			"type2": "steel",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 477,
@@ -2853,7 +3169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 478,
@@ -2862,7 +3179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
 			"type1": "ice",
 			"type2": "ghost",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 479,
@@ -2871,7 +3189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
 			"type1": "electric",
 			"type2": "ghost",
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": true
 		},
 		{
 			"id": 495,
@@ -2880,7 +3199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 308
+			"bst": 308,
+			"isFinalEvo": false
 		},
 		{
 			"id": 496,
@@ -2889,7 +3209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 413
+			"bst": 413,
+			"isFinalEvo": false
 		},
 		{
 			"id": 497,
@@ -2898,7 +3219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 528
+			"bst": 528,
+			"isFinalEvo": true
 		},
 		{
 			"id": 498,
@@ -2907,7 +3229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 308
+			"bst": 308,
+			"isFinalEvo": false
 		},
 		{
 			"id": 499,
@@ -2916,7 +3239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png",
 			"type1": "fire",
 			"type2": "fighting",
-			"bst": 418
+			"bst": 418,
+			"isFinalEvo": false
 		},
 		{
 			"id": 500,
@@ -2925,7 +3249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png",
 			"type1": "fire",
 			"type2": "fighting",
-			"bst": 528
+			"bst": 528,
+			"isFinalEvo": true
 		},
 		{
 			"id": 501,
@@ -2934,7 +3259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 308
+			"bst": 308,
+			"isFinalEvo": false
 		},
 		{
 			"id": 502,
@@ -2943,7 +3269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 413
+			"bst": 413,
+			"isFinalEvo": false
 		},
 		{
 			"id": 503,
@@ -2952,7 +3279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 528
+			"bst": 528,
+			"isFinalEvo": true
 		},
 		{
 			"id": 522,
@@ -2961,7 +3289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 295
+			"bst": 295,
+			"isFinalEvo": false
 		},
 		{
 			"id": 523,
@@ -2970,7 +3299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 497
+			"bst": 497,
+			"isFinalEvo": true
 		},
 		{
 			"id": 529,
@@ -2979,7 +3309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 328
+			"bst": 328,
+			"isFinalEvo": false
 		},
 		{
 			"id": 530,
@@ -2988,7 +3319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
 			"type1": "ground",
 			"type2": "steel",
-			"bst": 508
+			"bst": 508,
+			"isFinalEvo": true
 		},
 		{
 			"id": 532,
@@ -2997,7 +3329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 533,
@@ -3006,7 +3339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 534,
@@ -3015,7 +3349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 505
+			"bst": 505,
+			"isFinalEvo": true
 		},
 		{
 			"id": 540,
@@ -3024,7 +3359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png",
 			"type1": "bug",
 			"type2": "grass",
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 541,
@@ -3033,7 +3369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png",
 			"type1": "bug",
 			"type2": "grass",
-			"bst": 380
+			"bst": 380,
+			"isFinalEvo": false
 		},
 		{
 			"id": 542,
@@ -3042,7 +3379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png",
 			"type1": "bug",
 			"type2": "grass",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 546,
@@ -3051,7 +3389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png",
 			"type1": "grass",
 			"type2": "fairy",
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 547,
@@ -3060,7 +3399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png",
 			"type1": "grass",
 			"type2": "fairy",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 548,
@@ -3069,7 +3409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 549,
@@ -3078,7 +3419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 550,
@@ -3087,7 +3429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": false
 		},
 		{
 			"id": 551,
@@ -3096,7 +3439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png",
 			"type1": "ground",
 			"type2": "dark",
-			"bst": 292
+			"bst": 292,
+			"isFinalEvo": false
 		},
 		{
 			"id": 552,
@@ -3105,7 +3449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
 			"type1": "ground",
 			"type2": "dark",
-			"bst": 351
+			"bst": 351,
+			"isFinalEvo": false
 		},
 		{
 			"id": 553,
@@ -3114,7 +3459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
 			"type1": "ground",
 			"type2": "dark",
-			"bst": 519
+			"bst": 519,
+			"isFinalEvo": true
 		},
 		{
 			"id": 559,
@@ -3123,7 +3469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png",
 			"type1": "dark",
 			"type2": "fighting",
-			"bst": 348
+			"bst": 348,
+			"isFinalEvo": false
 		},
 		{
 			"id": 560,
@@ -3132,7 +3479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
 			"type1": "dark",
 			"type2": "fighting",
-			"bst": 488
+			"bst": 488,
+			"isFinalEvo": true
 		},
 		{
 			"id": 570,
@@ -3141,7 +3489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 571,
@@ -3150,7 +3499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 572,
@@ -3159,7 +3509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 573,
@@ -3168,7 +3519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 574,
@@ -3177,7 +3529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 575,
@@ -3186,7 +3539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 390
+			"bst": 390,
+			"isFinalEvo": false
 		},
 		{
 			"id": 576,
@@ -3195,7 +3549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 577,
@@ -3204,7 +3559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 578,
@@ -3213,7 +3569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 370
+			"bst": 370,
+			"isFinalEvo": false
 		},
 		{
 			"id": 579,
@@ -3222,7 +3579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 580,
@@ -3231,7 +3589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png",
 			"type1": "water",
 			"type2": "flying",
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 581,
@@ -3240,7 +3599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png",
 			"type1": "water",
 			"type2": "flying",
-			"bst": 473
+			"bst": 473,
+			"isFinalEvo": true
 		},
 		{
 			"id": 585,
@@ -3249,7 +3609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
 			"type1": "normal",
 			"type2": "grass",
-			"bst": 335
+			"bst": 335,
+			"isFinalEvo": false
 		},
 		{
 			"id": 586,
@@ -3258,7 +3619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
 			"type1": "normal",
 			"type2": "grass",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 590,
@@ -3267,7 +3629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 294
+			"bst": 294,
+			"isFinalEvo": false
 		},
 		{
 			"id": 591,
@@ -3276,7 +3639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png",
 			"type1": "grass",
 			"type2": "poison",
-			"bst": 464
+			"bst": 464,
+			"isFinalEvo": true
 		},
 		{
 			"id": 594,
@@ -3285,7 +3649,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 595,
@@ -3294,7 +3659,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png",
 			"type1": "bug",
 			"type2": "electric",
-			"bst": 319
+			"bst": 319,
+			"isFinalEvo": false
 		},
 		{
 			"id": 596,
@@ -3303,7 +3669,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png",
 			"type1": "bug",
 			"type2": "electric",
-			"bst": 472
+			"bst": 472,
+			"isFinalEvo": true
 		},
 		{
 			"id": 602,
@@ -3312,7 +3679,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 275
+			"bst": 275,
+			"isFinalEvo": false
 		},
 		{
 			"id": 603,
@@ -3321,7 +3689,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 604,
@@ -3330,7 +3699,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 515
+			"bst": 515,
+			"isFinalEvo": true
 		},
 		{
 			"id": 607,
@@ -3339,7 +3709,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png",
 			"type1": "ghost",
 			"type2": "fire",
-			"bst": 275
+			"bst": 275,
+			"isFinalEvo": false
 		},
 		{
 			"id": 608,
@@ -3348,7 +3719,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png",
 			"type1": "ghost",
 			"type2": "fire",
-			"bst": 370
+			"bst": 370,
+			"isFinalEvo": false
 		},
 		{
 			"id": 609,
@@ -3357,7 +3729,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
 			"type1": "ghost",
 			"type2": "fire",
-			"bst": 520
+			"bst": 520,
+			"isFinalEvo": true
 		},
 		{
 			"id": 610,
@@ -3366,7 +3739,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 611,
@@ -3375,7 +3749,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 612,
@@ -3384,7 +3759,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 613,
@@ -3393,7 +3769,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 614,
@@ -3402,7 +3779,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 505
+			"bst": 505,
+			"isFinalEvo": true
 		},
 		{
 			"id": 615,
@@ -3411,7 +3789,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 515
+			"bst": 515,
+			"isFinalEvo": true
 		},
 		{
 			"id": 619,
@@ -3420,7 +3799,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 620,
@@ -3429,7 +3809,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 622,
@@ -3438,7 +3819,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png",
 			"type1": "ground",
 			"type2": "ghost",
-			"bst": 303
+			"bst": 303,
+			"isFinalEvo": false
 		},
 		{
 			"id": 623,
@@ -3447,7 +3829,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
 			"type1": "ground",
 			"type2": "ghost",
-			"bst": 483
+			"bst": 483,
+			"isFinalEvo": true
 		},
 		{
 			"id": 624,
@@ -3456,7 +3839,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
 			"type1": "dark",
 			"type2": "steel",
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 625,
@@ -3465,7 +3849,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png",
 			"type1": "dark",
 			"type2": "steel",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": false
 		},
 		{
 			"id": 627,
@@ -3474,7 +3859,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 628,
@@ -3483,7 +3869,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 629,
@@ -3492,7 +3879,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png",
 			"type1": "dark",
 			"type2": "flying",
-			"bst": 370
+			"bst": 370,
+			"isFinalEvo": false
 		},
 		{
 			"id": 630,
@@ -3501,7 +3889,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png",
 			"type1": "dark",
 			"type2": "flying",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 633,
@@ -3510,7 +3899,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png",
 			"type1": "dark",
 			"type2": "dragon",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 634,
@@ -3519,7 +3909,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png",
 			"type1": "dark",
 			"type2": "dragon",
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 635,
@@ -3528,7 +3919,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png",
 			"type1": "dark",
 			"type2": "dragon",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 636,
@@ -3537,7 +3929,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png",
 			"type1": "bug",
 			"type2": "fire",
-			"bst": 360
+			"bst": 360,
+			"isFinalEvo": false
 		},
 		{
 			"id": 637,
@@ -3546,7 +3939,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
 			"type1": "bug",
 			"type2": "fire",
-			"bst": 550
+			"bst": 550,
+			"isFinalEvo": true
 		},
 		{
 			"id": 650,
@@ -3555,7 +3949,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 313
+			"bst": 313,
+			"isFinalEvo": false
 		},
 		{
 			"id": 651,
@@ -3564,7 +3959,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 652,
@@ -3573,7 +3969,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
 			"type1": "grass",
 			"type2": "fighting",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 653,
@@ -3582,7 +3979,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 307
+			"bst": 307,
+			"isFinalEvo": false
 		},
 		{
 			"id": 654,
@@ -3591,7 +3989,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 409
+			"bst": 409,
+			"isFinalEvo": false
 		},
 		{
 			"id": 655,
@@ -3600,7 +3999,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
 			"type1": "fire",
 			"type2": "psychic",
-			"bst": 534
+			"bst": 534,
+			"isFinalEvo": true
 		},
 		{
 			"id": 656,
@@ -3609,7 +4009,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 314
+			"bst": 314,
+			"isFinalEvo": false
 		},
 		{
 			"id": 657,
@@ -3618,7 +4019,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 405
+			"bst": 405,
+			"isFinalEvo": false
 		},
 		{
 			"id": 658,
@@ -3627,7 +4029,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
 			"type1": "water",
 			"type2": "dark",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 661,
@@ -3636,7 +4039,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 278
+			"bst": 278,
+			"isFinalEvo": false
 		},
 		{
 			"id": 662,
@@ -3645,7 +4049,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png",
 			"type1": "fire",
 			"type2": "flying",
-			"bst": 382
+			"bst": 382,
+			"isFinalEvo": false
 		},
 		{
 			"id": 663,
@@ -3654,7 +4059,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png",
 			"type1": "fire",
 			"type2": "flying",
-			"bst": 499
+			"bst": 499,
+			"isFinalEvo": true
 		},
 		{
 			"id": 664,
@@ -3663,7 +4069,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/664.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 200
+			"bst": 200,
+			"isFinalEvo": false
 		},
 		{
 			"id": 665,
@@ -3672,7 +4079,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 213
+			"bst": 213,
+			"isFinalEvo": false
 		},
 		{
 			"id": 666,
@@ -3681,7 +4089,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
 			"type1": "bug",
 			"type2": "flying",
-			"bst": 411
+			"bst": 411,
+			"isFinalEvo": true
 		},
 		{
 			"id": 667,
@@ -3690,7 +4099,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/667.png",
 			"type1": "fire",
 			"type2": "normal",
-			"bst": 369
+			"bst": 369,
+			"isFinalEvo": false
 		},
 		{
 			"id": 668,
@@ -3699,7 +4109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
 			"type1": "fire",
 			"type2": "normal",
-			"bst": 507
+			"bst": 507,
+			"isFinalEvo": true
 		},
 		{
 			"id": 669,
@@ -3708,7 +4119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 303
+			"bst": 303,
+			"isFinalEvo": false
 		},
 		{
 			"id": 670,
@@ -3717,7 +4129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 371
+			"bst": 371,
+			"isFinalEvo": false
 		},
 		{
 			"id": 671,
@@ -3726,7 +4139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 552
+			"bst": 552,
+			"isFinalEvo": true
 		},
 		{
 			"id": 672,
@@ -3735,7 +4149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 673,
@@ -3744,7 +4159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 531
+			"bst": 531,
+			"isFinalEvo": true
 		},
 		{
 			"id": 677,
@@ -3753,7 +4169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 355
+			"bst": 355,
+			"isFinalEvo": false
 		},
 		{
 			"id": 678,
@@ -3762,7 +4179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 466
+			"bst": 466,
+			"isFinalEvo": true
 		},
 		{
 			"id": 686,
@@ -3771,7 +4189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png",
 			"type1": "dark",
 			"type2": "psychic",
-			"bst": 288
+			"bst": 288,
+			"isFinalEvo": false
 		},
 		{
 			"id": 687,
@@ -3780,7 +4199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png",
 			"type1": "dark",
 			"type2": "psychic",
-			"bst": 482
+			"bst": 482,
+			"isFinalEvo": true
 		},
 		{
 			"id": 690,
@@ -3789,7 +4209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png",
 			"type1": "poison",
 			"type2": "water",
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 691,
@@ -3798,7 +4219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
 			"type1": "poison",
 			"type2": "dragon",
-			"bst": 494
+			"bst": 494,
+			"isFinalEvo": true
 		},
 		{
 			"id": 692,
@@ -3807,7 +4229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/692.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 693,
@@ -3816,7 +4239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 700,
@@ -3825,7 +4249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 701,
@@ -3834,7 +4259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png",
 			"type1": "fighting",
 			"type2": "flying",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 702,
@@ -3843,7 +4269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
 			"type1": "electric",
 			"type2": "fairy",
-			"bst": 431
+			"bst": 431,
+			"isFinalEvo": true
 		},
 		{
 			"id": 703,
@@ -3852,7 +4279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png",
 			"type1": "rock",
 			"type2": "fairy",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 704,
@@ -3861,7 +4289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 705,
@@ -3870,7 +4299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/705.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 452
+			"bst": 452,
+			"isFinalEvo": false
 		},
 		{
 			"id": 706,
@@ -3879,7 +4309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 707,
@@ -3888,7 +4319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png",
 			"type1": "steel",
 			"type2": "fairy",
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 708,
@@ -3897,7 +4329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png",
 			"type1": "ghost",
 			"type2": "grass",
-			"bst": 309
+			"bst": 309,
+			"isFinalEvo": false
 		},
 		{
 			"id": 709,
@@ -3906,7 +4339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png",
 			"type1": "ghost",
 			"type2": "grass",
-			"bst": 474
+			"bst": 474,
+			"isFinalEvo": true
 		},
 		{
 			"id": 712,
@@ -3915,7 +4349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/712.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 304
+			"bst": 304,
+			"isFinalEvo": false
 		},
 		{
 			"id": 713,
@@ -3924,7 +4359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/713.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 514
+			"bst": 514,
+			"isFinalEvo": true
 		},
 		{
 			"id": 714,
@@ -3933,7 +4369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
 			"type1": "flying",
 			"type2": "dragon",
-			"bst": 245
+			"bst": 245,
+			"isFinalEvo": false
 		},
 		{
 			"id": 715,
@@ -3942,7 +4379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png",
 			"type1": "flying",
 			"type2": "dragon",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 722,
@@ -3951,7 +4389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png",
 			"type1": "grass",
 			"type2": "flying",
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 723,
@@ -3960,7 +4399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png",
 			"type1": "grass",
 			"type2": "flying",
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 724,
@@ -3969,7 +4409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
 			"type1": "grass",
 			"type2": "ghost",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 725,
@@ -3978,7 +4419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 726,
@@ -3987,7 +4429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 727,
@@ -3996,7 +4439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
 			"type1": "fire",
 			"type2": "dark",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 728,
@@ -4005,7 +4449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 729,
@@ -4014,7 +4459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 730,
@@ -4023,7 +4469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
 			"type1": "water",
 			"type2": "fairy",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 731,
@@ -4032,7 +4479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 265
+			"bst": 265,
+			"isFinalEvo": false
 		},
 		{
 			"id": 732,
@@ -4041,7 +4489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 355
+			"bst": 355,
+			"isFinalEvo": false
 		},
 		{
 			"id": 733,
@@ -4050,7 +4499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 734,
@@ -4059,7 +4509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 253
+			"bst": 253,
+			"isFinalEvo": false
 		},
 		{
 			"id": 735,
@@ -4068,7 +4519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 418
+			"bst": 418,
+			"isFinalEvo": true
 		},
 		{
 			"id": 736,
@@ -4077,7 +4529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 737,
@@ -4086,7 +4539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png",
 			"type1": "bug",
 			"type2": "electric",
-			"bst": 400
+			"bst": 400,
+			"isFinalEvo": false
 		},
 		{
 			"id": 738,
@@ -4095,7 +4549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png",
 			"type1": "bug",
 			"type2": "electric",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 739,
@@ -4104,7 +4559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 338
+			"bst": 338,
+			"isFinalEvo": false
 		},
 		{
 			"id": 740,
@@ -4113,7 +4569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png",
 			"type1": "fighting",
 			"type2": "ice",
-			"bst": 478
+			"bst": 478,
+			"isFinalEvo": true
 		},
 		{
 			"id": 741,
@@ -4122,7 +4579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
 			"type1": "fire",
 			"type2": "flying",
-			"bst": 476
+			"bst": 476,
+			"isFinalEvo": true
 		},
 		{
 			"id": 742,
@@ -4131,7 +4589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png",
 			"type1": "bug",
 			"type2": "fairy",
-			"bst": 304
+			"bst": 304,
+			"isFinalEvo": false
 		},
 		{
 			"id": 743,
@@ -4140,7 +4599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png",
 			"type1": "bug",
 			"type2": "fairy",
-			"bst": 464
+			"bst": 464,
+			"isFinalEvo": true
 		},
 		{
 			"id": 744,
@@ -4149,7 +4609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 745,
@@ -4158,7 +4619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 487
+			"bst": 487,
+			"isFinalEvo": true
 		},
 		{
 			"id": 747,
@@ -4167,7 +4629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png",
 			"type1": "poison",
 			"type2": "water",
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 748,
@@ -4176,7 +4639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png",
 			"type1": "poison",
 			"type2": "water",
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 749,
@@ -4185,7 +4649,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 385
+			"bst": 385,
+			"isFinalEvo": false
 		},
 		{
 			"id": 750,
@@ -4194,7 +4659,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 751,
@@ -4203,7 +4669,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png",
 			"type1": "water",
 			"type2": "bug",
-			"bst": 269
+			"bst": 269,
+			"isFinalEvo": false
 		},
 		{
 			"id": 752,
@@ -4212,7 +4679,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png",
 			"type1": "water",
 			"type2": "bug",
-			"bst": 454
+			"bst": 454,
+			"isFinalEvo": true
 		},
 		{
 			"id": 753,
@@ -4221,7 +4689,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 250
+			"bst": 250,
+			"isFinalEvo": false
 		},
 		{
 			"id": 754,
@@ -4230,7 +4699,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 757,
@@ -4239,7 +4709,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png",
 			"type1": "poison",
 			"type2": "fire",
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 758,
@@ -4248,7 +4719,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
 			"type1": "poison",
 			"type2": "fire",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 761,
@@ -4257,7 +4729,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 210
+			"bst": 210,
+			"isFinalEvo": false
 		},
 		{
 			"id": 762,
@@ -4266,7 +4739,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 763,
@@ -4275,7 +4749,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 764,
@@ -4284,7 +4759,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 765,
@@ -4293,7 +4769,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png",
 			"type1": "normal",
 			"type2": "psychic",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 766,
@@ -4302,7 +4779,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 769,
@@ -4311,7 +4789,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png",
 			"type1": "ghost",
 			"type2": "ground",
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 770,
@@ -4320,7 +4799,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png",
 			"type1": "ghost",
 			"type2": "ground",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 774,
@@ -4329,7 +4809,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
 			"type1": "rock",
 			"type2": "flying",
-			"bst": 440
+			"bst": 440,
+			"isFinalEvo": true
 		},
 		{
 			"id": 775,
@@ -4338,7 +4819,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 778,
@@ -4347,7 +4829,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
 			"type1": "ghost",
 			"type2": "fairy",
-			"bst": 476
+			"bst": 476,
+			"isFinalEvo": true
 		},
 		{
 			"id": 779,
@@ -4356,7 +4839,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
 			"type1": "water",
 			"type2": "psychic",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 782,
@@ -4365,7 +4849,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png",
 			"type1": "dragon",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 783,
@@ -4374,7 +4859,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png",
 			"type1": "dragon",
 			"type2": "fighting",
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 784,
@@ -4383,7 +4869,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
 			"type1": "dragon",
 			"type2": "fighting",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 810,
@@ -4392,7 +4879,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 811,
@@ -4401,7 +4889,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 812,
@@ -4410,7 +4899,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 813,
@@ -4419,7 +4909,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 814,
@@ -4428,7 +4919,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 815,
@@ -4437,7 +4929,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 816,
@@ -4446,7 +4939,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 817,
@@ -4455,7 +4949,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 420
+			"bst": 420,
+			"isFinalEvo": false
 		},
 		{
 			"id": 818,
@@ -4464,7 +4959,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 819,
@@ -4473,7 +4969,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 275
+			"bst": 275,
+			"isFinalEvo": false
 		},
 		{
 			"id": 820,
@@ -4482,7 +4979,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/820.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 460
+			"bst": 460,
+			"isFinalEvo": true
 		},
 		{
 			"id": 821,
@@ -4491,7 +4989,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png",
 			"type1": "flying",
 			"type2": null,
-			"bst": 245
+			"bst": 245,
+			"isFinalEvo": false
 		},
 		{
 			"id": 822,
@@ -4500,7 +4999,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/822.png",
 			"type1": "flying",
 			"type2": null,
-			"bst": 365
+			"bst": 365,
+			"isFinalEvo": false
 		},
 		{
 			"id": 823,
@@ -4509,7 +5009,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/823.png",
 			"type1": "flying",
 			"type2": "steel",
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 833,
@@ -4518,7 +5019,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 284
+			"bst": 284,
+			"isFinalEvo": false
 		},
 		{
 			"id": 834,
@@ -4527,7 +5029,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
 			"type1": "water",
 			"type2": "rock",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 837,
@@ -4536,7 +5039,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/837.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 240
+			"bst": 240,
+			"isFinalEvo": false
 		},
 		{
 			"id": 838,
@@ -4545,7 +5049,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/838.png",
 			"type1": "rock",
 			"type2": "fire",
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 839,
@@ -4554,7 +5059,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png",
 			"type1": "rock",
 			"type2": "fire",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 840,
@@ -4563,7 +5069,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
 			"type1": "grass",
 			"type2": "dragon",
-			"bst": 260
+			"bst": 260,
+			"isFinalEvo": false
 		},
 		{
 			"id": 841,
@@ -4572,7 +5079,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png",
 			"type1": "grass",
 			"type2": "dragon",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 842,
@@ -4581,7 +5089,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png",
 			"type1": "grass",
 			"type2": "dragon",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 843,
@@ -4590,7 +5099,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 315
+			"bst": 315,
+			"isFinalEvo": false
 		},
 		{
 			"id": 844,
@@ -4599,7 +5109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png",
 			"type1": "ground",
 			"type2": null,
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 845,
@@ -4608,7 +5119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
 			"type1": "flying",
 			"type2": "water",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 846,
@@ -4617,7 +5129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 847,
@@ -4626,7 +5139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 848,
@@ -4635,7 +5149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png",
 			"type1": "electric",
 			"type2": "poison",
-			"bst": 242
+			"bst": 242,
+			"isFinalEvo": false
 		},
 		{
 			"id": 849,
@@ -4644,7 +5159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png",
 			"type1": "electric",
 			"type2": "poison",
-			"bst": 502
+			"bst": 502,
+			"isFinalEvo": true
 		},
 		{
 			"id": 854,
@@ -4653,7 +5169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 308
+			"bst": 308,
+			"isFinalEvo": false
 		},
 		{
 			"id": 855,
@@ -4662,7 +5179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 508
+			"bst": 508,
+			"isFinalEvo": true
 		},
 		{
 			"id": 856,
@@ -4671,7 +5189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 265
+			"bst": 265,
+			"isFinalEvo": false
 		},
 		{
 			"id": 857,
@@ -4680,7 +5199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 370
+			"bst": 370,
+			"isFinalEvo": false
 		},
 		{
 			"id": 858,
@@ -4689,7 +5209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
 			"type1": "psychic",
 			"type2": "fairy",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 859,
@@ -4698,7 +5219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/859.png",
 			"type1": "dark",
 			"type2": "fairy",
-			"bst": 265
+			"bst": 265,
+			"isFinalEvo": false
 		},
 		{
 			"id": 860,
@@ -4707,7 +5229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png",
 			"type1": "dark",
 			"type2": "fairy",
-			"bst": 370
+			"bst": 370,
+			"isFinalEvo": false
 		},
 		{
 			"id": 861,
@@ -4716,7 +5239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
 			"type1": "dark",
 			"type2": "fairy",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 868,
@@ -4725,7 +5249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/868.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 270
+			"bst": 270,
+			"isFinalEvo": false
 		},
 		{
 			"id": 869,
@@ -4734,7 +5259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 870,
@@ -4743,7 +5269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png",
 			"type1": "fighting",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 871,
@@ -4752,7 +5279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 435
+			"bst": 435,
+			"isFinalEvo": true
 		},
 		{
 			"id": 872,
@@ -4761,7 +5289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png",
 			"type1": "ice",
 			"type2": "bug",
-			"bst": 185
+			"bst": 185,
+			"isFinalEvo": false
 		},
 		{
 			"id": 873,
@@ -4770,7 +5299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png",
 			"type1": "ice",
 			"type2": "bug",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 874,
@@ -4779,7 +5309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 875,
@@ -4788,7 +5319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 876,
@@ -4797,7 +5329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png",
 			"type1": "psychic",
 			"type2": "normal",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 877,
@@ -4806,7 +5339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
 			"type1": "electric",
 			"type2": "dark",
-			"bst": 436
+			"bst": 436,
+			"isFinalEvo": true
 		},
 		{
 			"id": 878,
@@ -4815,7 +5349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/878.png",
 			"type1": "steel",
 			"type2": null,
-			"bst": 330
+			"bst": 330,
+			"isFinalEvo": false
 		},
 		{
 			"id": 879,
@@ -4824,7 +5359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png",
 			"type1": "steel",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 884,
@@ -4833,7 +5369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
 			"type1": "steel",
 			"type2": "dragon",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": false
 		},
 		{
 			"id": 885,
@@ -4842,7 +5379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png",
 			"type1": "dragon",
 			"type2": "ghost",
-			"bst": 270
+			"bst": 270,
+			"isFinalEvo": false
 		},
 		{
 			"id": 886,
@@ -4851,7 +5389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/886.png",
 			"type1": "dragon",
 			"type2": "ghost",
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 887,
@@ -4860,7 +5399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
 			"type1": "dragon",
 			"type2": "ghost",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 900,
@@ -4869,7 +5409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/900.png",
 			"type1": "bug",
 			"type2": "rock",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 901,
@@ -4878,7 +5419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
 			"type1": "ground",
 			"type2": "normal",
-			"bst": 550
+			"bst": 550,
+			"isFinalEvo": true
 		},
 		{
 			"id": 902,
@@ -4887,7 +5429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png",
 			"type1": "water",
 			"type2": "ghost",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 904,
@@ -4896,7 +5439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png",
 			"type1": "dark",
 			"type2": "poison",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 906,
@@ -4905,7 +5449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 907,
@@ -4914,7 +5459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 908,
@@ -4923,7 +5469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png",
 			"type1": "grass",
 			"type2": "dark",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 909,
@@ -4932,7 +5479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 910,
@@ -4941,7 +5489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 411
+			"bst": 411,
+			"isFinalEvo": false
 		},
 		{
 			"id": 911,
@@ -4950,7 +5499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png",
 			"type1": "fire",
 			"type2": "ghost",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 912,
@@ -4959,7 +5509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 310
+			"bst": 310,
+			"isFinalEvo": false
 		},
 		{
 			"id": 913,
@@ -4968,7 +5519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 410
+			"bst": 410,
+			"isFinalEvo": false
 		},
 		{
 			"id": 914,
@@ -4977,7 +5529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png",
 			"type1": "water",
 			"type2": "fighting",
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 915,
@@ -4986,7 +5539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 254
+			"bst": 254,
+			"isFinalEvo": false
 		},
 		{
 			"id": 916,
@@ -4995,7 +5549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 489
+			"bst": 489,
+			"isFinalEvo": true
 		},
 		{
 			"id": 917,
@@ -5004,7 +5559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 210
+			"bst": 210,
+			"isFinalEvo": false
 		},
 		{
 			"id": 918,
@@ -5013,7 +5569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 404
+			"bst": 404,
+			"isFinalEvo": true
 		},
 		{
 			"id": 919,
@@ -5022,7 +5579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 210
+			"bst": 210,
+			"isFinalEvo": false
 		},
 		{
 			"id": 920,
@@ -5031,7 +5589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png",
 			"type1": "bug",
 			"type2": "dark",
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": true
 		},
 		{
 			"id": 921,
@@ -5040,7 +5599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 240
+			"bst": 240,
+			"isFinalEvo": false
 		},
 		{
 			"id": 922,
@@ -5049,7 +5609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png",
 			"type1": "electric",
 			"type2": "fighting",
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 923,
@@ -5058,7 +5619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png",
 			"type1": "electric",
 			"type2": "fighting",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 924,
@@ -5067,7 +5629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 305
+			"bst": 305,
+			"isFinalEvo": false
 		},
 		{
 			"id": 925,
@@ -5076,7 +5639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 926,
@@ -5085,7 +5649,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 312
+			"bst": 312,
+			"isFinalEvo": false
 		},
 		{
 			"id": 927,
@@ -5094,7 +5659,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
 			"type1": "fairy",
 			"type2": null,
-			"bst": 477
+			"bst": 477,
+			"isFinalEvo": true
 		},
 		{
 			"id": 928,
@@ -5103,7 +5669,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
 			"type1": "grass",
 			"type2": "normal",
-			"bst": 260
+			"bst": 260,
+			"isFinalEvo": false
 		},
 		{
 			"id": 929,
@@ -5112,7 +5679,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png",
 			"type1": "grass",
 			"type2": "normal",
-			"bst": 354
+			"bst": 354,
+			"isFinalEvo": false
 		},
 		{
 			"id": 930,
@@ -5121,7 +5689,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png",
 			"type1": "grass",
 			"type2": "normal",
-			"bst": 510
+			"bst": 510,
+			"isFinalEvo": true
 		},
 		{
 			"id": 931,
@@ -5130,7 +5699,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
 			"type1": "normal",
 			"type2": "flying",
-			"bst": 417
+			"bst": 417,
+			"isFinalEvo": true
 		},
 		{
 			"id": 932,
@@ -5139,7 +5709,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 933,
@@ -5148,7 +5719,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 355
+			"bst": 355,
+			"isFinalEvo": false
 		},
 		{
 			"id": 934,
@@ -5157,7 +5729,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 935,
@@ -5166,7 +5739,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png",
 			"type1": "fire",
 			"type2": null,
-			"bst": 255
+			"bst": 255,
+			"isFinalEvo": false
 		},
 		{
 			"id": 936,
@@ -5175,7 +5749,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png",
 			"type1": "fire",
 			"type2": "psychic",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 937,
@@ -5184,7 +5759,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png",
 			"type1": "fire",
 			"type2": "ghost",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 938,
@@ -5193,7 +5769,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 272
+			"bst": 272,
+			"isFinalEvo": false
 		},
 		{
 			"id": 939,
@@ -5202,7 +5779,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png",
 			"type1": "electric",
 			"type2": null,
-			"bst": 495
+			"bst": 495,
+			"isFinalEvo": true
 		},
 		{
 			"id": 940,
@@ -5211,7 +5789,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png",
 			"type1": "electric",
 			"type2": "flying",
-			"bst": 280
+			"bst": 280,
+			"isFinalEvo": false
 		},
 		{
 			"id": 941,
@@ -5220,7 +5799,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
 			"type1": "electric",
 			"type2": "flying",
-			"bst": 490
+			"bst": 490,
+			"isFinalEvo": true
 		},
 		{
 			"id": 942,
@@ -5229,7 +5809,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 340
+			"bst": 340,
+			"isFinalEvo": false
 		},
 		{
 			"id": 943,
@@ -5238,7 +5819,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
 			"type1": "dark",
 			"type2": null,
-			"bst": 505
+			"bst": 505,
+			"isFinalEvo": true
 		},
 		{
 			"id": 944,
@@ -5247,7 +5829,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png",
 			"type1": "poison",
 			"type2": "normal",
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 945,
@@ -5256,7 +5839,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png",
 			"type1": "poison",
 			"type2": "normal",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 946,
@@ -5265,7 +5849,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png",
 			"type1": "grass",
 			"type2": "ghost",
-			"bst": 275
+			"bst": 275,
+			"isFinalEvo": false
 		},
 		{
 			"id": 947,
@@ -5274,7 +5859,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png",
 			"type1": "grass",
 			"type2": "ghost",
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 948,
@@ -5283,7 +5869,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png",
 			"type1": "ground",
 			"type2": "grass",
-			"bst": 335
+			"bst": 335,
+			"isFinalEvo": false
 		},
 		{
 			"id": 949,
@@ -5292,7 +5879,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png",
 			"type1": "ground",
 			"type2": "grass",
-			"bst": 515
+			"bst": 515,
+			"isFinalEvo": true
 		},
 		{
 			"id": 950,
@@ -5301,7 +5889,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png",
 			"type1": "rock",
 			"type2": null,
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": true
 		},
 		{
 			"id": 951,
@@ -5310,7 +5899,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 304
+			"bst": 304,
+			"isFinalEvo": false
 		},
 		{
 			"id": 952,
@@ -5319,7 +5909,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
 			"type1": "grass",
 			"type2": "fire",
-			"bst": 486
+			"bst": 486,
+			"isFinalEvo": true
 		},
 		{
 			"id": 953,
@@ -5328,7 +5919,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
 			"type1": "bug",
 			"type2": null,
-			"bst": 270
+			"bst": 270,
+			"isFinalEvo": false
 		},
 		{
 			"id": 954,
@@ -5337,7 +5929,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
 			"type1": "bug",
 			"type2": "psychic",
-			"bst": 470
+			"bst": 470,
+			"isFinalEvo": true
 		},
 		{
 			"id": 955,
@@ -5346,7 +5939,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 255
+			"bst": 255,
+			"isFinalEvo": false
 		},
 		{
 			"id": 956,
@@ -5355,7 +5949,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png",
 			"type1": "psychic",
 			"type2": null,
-			"bst": 481
+			"bst": 481,
+			"isFinalEvo": true
 		},
 		{
 			"id": 957,
@@ -5364,7 +5959,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
 			"type1": "fairy",
 			"type2": "steel",
-			"bst": 297
+			"bst": 297,
+			"isFinalEvo": false
 		},
 		{
 			"id": 958,
@@ -5373,7 +5969,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png",
 			"type1": "fairy",
 			"type2": "steel",
-			"bst": 380
+			"bst": 380,
+			"isFinalEvo": false
 		},
 		{
 			"id": 959,
@@ -5382,7 +5979,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
 			"type1": "fairy",
 			"type2": "steel",
-			"bst": 506
+			"bst": 506,
+			"isFinalEvo": true
 		},
 		{
 			"id": 960,
@@ -5391,7 +5989,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 245
+			"bst": 245,
+			"isFinalEvo": false
 		},
 		{
 			"id": 961,
@@ -5400,7 +5999,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 425
+			"bst": 425,
+			"isFinalEvo": true
 		},
 		{
 			"id": 962,
@@ -5409,7 +6009,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png",
 			"type1": "flying",
 			"type2": "dark",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": true
 		},
 		{
 			"id": 963,
@@ -5418,7 +6019,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 315
+			"bst": 315,
+			"isFinalEvo": false
 		},
 		{
 			"id": 964,
@@ -5427,7 +6029,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 457
+			"bst": 457,
+			"isFinalEvo": true
 		},
 		{
 			"id": 965,
@@ -5436,7 +6039,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png",
 			"type1": "steel",
 			"type2": "poison",
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 966,
@@ -5445,7 +6049,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png",
 			"type1": "steel",
 			"type2": "poison",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 967,
@@ -5454,7 +6059,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png",
 			"type1": "dragon",
 			"type2": "normal",
-			"bst": 501
+			"bst": 501,
+			"isFinalEvo": true
 		},
 		{
 			"id": 968,
@@ -5463,7 +6069,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png",
 			"type1": "steel",
 			"type2": null,
-			"bst": 480
+			"bst": 480,
+			"isFinalEvo": true
 		},
 		{
 			"id": 969,
@@ -5472,7 +6079,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png",
 			"type1": "rock",
 			"type2": "poison",
-			"bst": 350
+			"bst": 350,
+			"isFinalEvo": false
 		},
 		{
 			"id": 970,
@@ -5481,7 +6089,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png",
 			"type1": "rock",
 			"type2": "poison",
-			"bst": 525
+			"bst": 525,
+			"isFinalEvo": true
 		},
 		{
 			"id": 971,
@@ -5490,7 +6099,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 290
+			"bst": 290,
+			"isFinalEvo": false
 		},
 		{
 			"id": 972,
@@ -5499,7 +6109,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 488
+			"bst": 488,
+			"isFinalEvo": true
 		},
 		{
 			"id": 973,
@@ -5508,7 +6119,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png",
 			"type1": "flying",
 			"type2": "fighting",
-			"bst": 500
+			"bst": 500,
+			"isFinalEvo": true
 		},
 		{
 			"id": 974,
@@ -5517,7 +6129,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 334
+			"bst": 334,
+			"isFinalEvo": false
 		},
 		{
 			"id": 975,
@@ -5526,7 +6139,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png",
 			"type1": "ice",
 			"type2": null,
-			"bst": 521
+			"bst": 521,
+			"isFinalEvo": true
 		},
 		{
 			"id": 976,
@@ -5535,7 +6149,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png",
 			"type1": "water",
 			"type2": "psychic",
-			"bst": 478
+			"bst": 478,
+			"isFinalEvo": true
 		},
 		{
 			"id": 977,
@@ -5544,7 +6159,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png",
 			"type1": "water",
 			"type2": null,
-			"bst": 530
+			"bst": 530,
+			"isFinalEvo": true
 		},
 		{
 			"id": 978,
@@ -5553,7 +6169,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
 			"type1": "dragon",
 			"type2": "water",
-			"bst": 475
+			"bst": 475,
+			"isFinalEvo": true
 		},
 		{
 			"id": 979,
@@ -5562,7 +6179,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png",
 			"type1": "fighting",
 			"type2": "ghost",
-			"bst": 535
+			"bst": 535,
+			"isFinalEvo": true
 		},
 		{
 			"id": 980,
@@ -5571,7 +6189,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
 			"type1": "poison",
 			"type2": "ground",
-			"bst": 430
+			"bst": 430,
+			"isFinalEvo": true
 		},
 		{
 			"id": 981,
@@ -5580,7 +6199,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png",
 			"type1": "normal",
 			"type2": "psychic",
-			"bst": 520
+			"bst": 520,
+			"isFinalEvo": true
 		},
 		{
 			"id": 982,
@@ -5589,7 +6209,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 520
+			"bst": 520,
+			"isFinalEvo": true
 		},
 		{
 			"id": 983,
@@ -5598,7 +6219,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png",
 			"type1": "dark",
 			"type2": "steel",
-			"bst": 550
+			"bst": 550,
+			"isFinalEvo": true
 		},
 		{
 			"id": 984,
@@ -5607,7 +6229,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png",
 			"type1": "ground",
 			"type2": "fighting",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 985,
@@ -5616,7 +6239,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png",
 			"type1": "fairy",
 			"type2": "psychic",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 986,
@@ -5625,7 +6249,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png",
 			"type1": "grass",
 			"type2": "dark",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 987,
@@ -5634,7 +6259,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png",
 			"type1": "ghost",
 			"type2": "fairy",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 988,
@@ -5643,7 +6269,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png",
 			"type1": "bug",
 			"type2": "fighting",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 989,
@@ -5652,7 +6279,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png",
 			"type1": "electric",
 			"type2": "ground",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 990,
@@ -5661,7 +6289,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png",
 			"type1": "ground",
 			"type2": "steel",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 991,
@@ -5670,7 +6299,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png",
 			"type1": "ice",
 			"type2": "water",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 992,
@@ -5679,7 +6309,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png",
 			"type1": "fighting",
 			"type2": "electric",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 993,
@@ -5688,7 +6319,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png",
 			"type1": "dark",
 			"type2": "flying",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 994,
@@ -5697,7 +6329,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png",
 			"type1": "fire",
 			"type2": "poison",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 995,
@@ -5706,7 +6339,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png",
 			"type1": "rock",
 			"type2": "electric",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 996,
@@ -5715,7 +6349,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png",
 			"type1": "dragon",
 			"type2": "ice",
-			"bst": 320
+			"bst": 320,
+			"isFinalEvo": false
 		},
 		{
 			"id": 997,
@@ -5724,7 +6359,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png",
 			"type1": "dragon",
 			"type2": "ice",
-			"bst": 423
+			"bst": 423,
+			"isFinalEvo": false
 		},
 		{
 			"id": 998,
@@ -5733,7 +6369,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png",
 			"type1": "dragon",
 			"type2": "ice",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 999,
@@ -5742,7 +6379,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png",
 			"type1": "ghost",
 			"type2": null,
-			"bst": 300
+			"bst": 300,
+			"isFinalEvo": false
 		},
 		{
 			"id": 1000,
@@ -5751,7 +6389,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
 			"type1": "steel",
 			"type2": "ghost",
-			"bst": 550
+			"bst": 550,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1001,
@@ -5760,7 +6399,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png",
 			"type1": "dark",
 			"type2": "grass",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1002,
@@ -5769,7 +6409,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png",
 			"type1": "dark",
 			"type2": "ice",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1003,
@@ -5778,7 +6419,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png",
 			"type1": "dark",
 			"type2": "ground",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1004,
@@ -5787,7 +6429,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
 			"type1": "dark",
 			"type2": "fire",
-			"bst": 570
+			"bst": 570,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1005,
@@ -5796,7 +6439,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png",
 			"type1": "dragon",
 			"type2": "dark",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1006,
@@ -5805,7 +6449,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png",
 			"type1": "fairy",
 			"type2": "fighting",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1007,
@@ -5814,7 +6459,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
 			"type1": "fighting",
 			"type2": "dragon",
-			"bst": 670
+			"bst": 670,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1008,
@@ -5823,7 +6469,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
 			"type1": "electric",
 			"type2": "dragon",
-			"bst": 670
+			"bst": 670,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1009,
@@ -5832,7 +6479,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1009.png",
 			"type1": "water",
 			"type2": "dragon",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1010,
@@ -5841,7 +6489,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png",
 			"type1": "grass",
 			"type2": "psychic",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1011,
@@ -5850,7 +6499,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png",
 			"type1": "grass",
 			"type2": "dragon",
-			"bst": 485
+			"bst": 485,
+			"isFinalEvo": false
 		},
 		{
 			"id": 1012,
@@ -5859,7 +6509,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png",
 			"type1": "grass",
 			"type2": "ghost",
-			"bst": 308
+			"bst": 308,
+			"isFinalEvo": false
 		},
 		{
 			"id": 1013,
@@ -5868,7 +6519,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png",
 			"type1": "grass",
 			"type2": "ghost",
-			"bst": 508
+			"bst": 508,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1014,
@@ -5877,7 +6529,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png",
 			"type1": "poison",
 			"type2": "fighting",
-			"bst": 555
+			"bst": 555,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1015,
@@ -5886,7 +6539,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png",
 			"type1": "poison",
 			"type2": "psychic",
-			"bst": 555
+			"bst": 555,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1016,
@@ -5895,7 +6549,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png",
 			"type1": "poison",
 			"type2": "fairy",
-			"bst": 555
+			"bst": 555,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1017,
@@ -5904,7 +6559,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png",
 			"type1": "grass",
 			"type2": null,
-			"bst": 550
+			"bst": 550,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1018,
@@ -5913,7 +6569,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png",
 			"type1": "steel",
 			"type2": "dragon",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1019,
@@ -5922,7 +6579,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png",
 			"type1": "grass",
 			"type2": "dragon",
-			"bst": 540
+			"bst": 540,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1020,
@@ -5931,7 +6589,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png",
 			"type1": "fire",
 			"type2": "dragon",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1021,
@@ -5940,7 +6599,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png",
 			"type1": "electric",
 			"type2": "dragon",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1022,
@@ -5949,7 +6609,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png",
 			"type1": "rock",
 			"type2": "psychic",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1023,
@@ -5958,7 +6619,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png",
 			"type1": "steel",
 			"type2": "psychic",
-			"bst": 590
+			"bst": 590,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1024,
@@ -5967,7 +6629,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png",
 			"type1": "normal",
 			"type2": null,
-			"bst": 450
+			"bst": 450,
+			"isFinalEvo": true
 		},
 		{
 			"id": 1025,
@@ -5976,7 +6639,8 @@
 			"spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png",
 			"type1": "poison",
 			"type2": "ghost",
-			"bst": 600
+			"bst": 600,
+			"isFinalEvo": true
 		}
 	]
 }

@@ -1,8 +1,8 @@
-import { createClient } from "@supabase/supabase-js";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { Effect, Console } from "effect";
+import { createClient } from "@supabase/supabase-js";
+import { Console, Effect } from "effect";
 import type { Database } from "../src/lib/database.types";
 import { INITIAL_MU, INITIAL_SIGMA } from "../src/ranking/openskill";
 import type { PokemonAsset } from "../src/types/pokemon";

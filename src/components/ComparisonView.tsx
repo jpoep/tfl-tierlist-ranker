@@ -7,6 +7,10 @@ import { PokemonCard } from "./PokemonCard";
 interface ComparisonViewProps {
   pair: SelectedPair;
   onAdvance: () => void;
+  ordinalBias: number;
+  onOrdinalBiasChange: (bias: number) => void;
+  finalEvosOnly: boolean;
+  onFinalEvosOnlyChange: (value: boolean) => void;
 }
 
 type VoteState =
@@ -40,7 +44,14 @@ const KeyHint = ({
   </span>
 );
 
-export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
+export const ComparisonView = ({
+  pair,
+  onAdvance,
+  ordinalBias,
+  onOrdinalBiasChange,
+  finalEvosOnly,
+  onFinalEvosOnlyChange,
+}: ComparisonViewProps) => {
   const [voteState, setVoteState] = useState<VoteState>({ status: "idle" });
 
   // When the pair prop changes (i.e. after advance() causes a re-render with a
@@ -219,6 +230,52 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
           <KeyHint labels={["Space"]} description="skip" />
         </div>
       )}
+
+      {/* Final evos only toggle */}
+      <label className="flex w-full max-w-xs cursor-pointer items-center justify-between gap-3">
+        <span className="text-xs text-white/30">Nur finale Entwicklungen</span>
+        <button
+          type="button"
+          role="switch"
+          aria-checked={finalEvosOnly}
+          onClick={() => onFinalEvosOnlyChange(!finalEvosOnly)}
+          className={[
+            "relative inline-flex h-5 w-9 shrink-0 items-center rounded-full transition-colors duration-200",
+            finalEvosOnly ? "bg-white/40" : "bg-white/10",
+          ].join(" ")}
+        >
+          <span
+            className={[
+              "inline-block h-3.5 w-3.5 rounded-full bg-white transition-transform duration-200",
+              finalEvosOnly ? "translate-x-4.5" : "translate-x-0.5",
+            ].join(" ")}
+          />
+        </button>
+      </label>
+
+      {/* Ordinal bias slider */}
+      <div className="flex w-full max-w-xs flex-col gap-1.5">
+        <div className="flex items-center justify-between text-xs text-white/30">
+          <span>Bias</span>
+          <span className="tabular-nums">{Math.round(ordinalBias * 100)}%</span>
+        </div>
+        <div className="relative flex items-center">
+          <input
+            type="range"
+            min={0}
+            max={1}
+            step={0.05}
+            value={ordinalBias}
+            onChange={(e) => onOrdinalBiasChange(Number(e.target.value))}
+            className="w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-white/60"
+            style={{ height: "4px" }}
+          />
+        </div>
+        <div className="flex justify-between text-[10px] text-white/20">
+          <span>Unsichere Platzierung</span>
+          <span>Starke Pokémon</span>
+        </div>
+      </div>
     </div>
   );
 };

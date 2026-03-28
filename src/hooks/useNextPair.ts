@@ -1,8 +1,12 @@
 import { Effect } from "effect";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { supabase } from "@/lib/supabase";
 import type { MatchupRow, RatingRow } from "@/lib/db-types";
-import { type SelectedPair, selectNextPair } from "@/ranking/pairSelection";
+import { supabase } from "@/lib/supabase";
+import {
+  DEFAULT_ORDINAL_BIAS,
+  type SelectedPair,
+  selectNextPair,
+} from "@/ranking/pairSelection";
 import type { Pokemon } from "@/types/pokemon";
 
 const RECENT_MATCHUP_LIMIT = 30;
@@ -48,8 +52,14 @@ export interface NextPairHandle {
  *      → new pair locked in.
  *
  * @param pokemon - The full Pokémon list (static, from usePokemon)
+ * @param ordinalBias - How strongly to bias pair selection towards higher-ranked Pokémon [0, 1]
+ * @param finalEvosOnly - When true, only final-evolution Pokémon are included in the pool
  */
-export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
+export const useNextPair = (
+  pokemon: Pokemon[],
+  ordinalBias: number = DEFAULT_ORDINAL_BIAS,
+  finalEvosOnly = false,
+): NextPairHandle => {
   // -------------------------------------------------------------------------
   // Live state — updated by Realtime, NOT directly rendered
   // -------------------------------------------------------------------------
@@ -84,7 +94,10 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
   // Pair computation helper (pure)
   // -------------------------------------------------------------------------
   const computePair = useCallback(
-    (state: LiveState): SelectedPair | null | undefined => {
+    (
+      state: LiveState,
+      bias: number = ordinalBias,
+    ): SelectedPair | null | undefined => {
       if (state.isLoading) return undefined;
       if (pokemon.length < 2) return null;
 
@@ -92,7 +105,11 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
         state.ratings.map((r) => [r.pokemon_id, r]),
       );
 
-      const pool = pokemon.flatMap((p) => {
+      const filteredPokemon = finalEvosOnly
+        ? pokemon.filter((p) => p.isFinalEvo)
+        : pokemon;
+
+      const pool = filteredPokemon.flatMap((p) => {
         const row = ratingMap.get(p.id);
         if (!row) return [];
         return [
@@ -116,7 +133,9 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
         loserId: m.loser_id,
       }));
 
-      const result = Effect.runSyncExit(selectNextPair(pool, recentMatchups));
+      const result = Effect.runSyncExit(
+        selectNextPair(pool, recentMatchups, bias),
+      );
 
       if (result._tag === "Failure") {
         console.error("[useNextPair] pair selection failed:", result.cause);
@@ -125,7 +144,7 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
 
       return result.value;
     },
-    [pokemon],
+    [pokemon, ordinalBias, finalEvosOnly],
   );
 
   // -------------------------------------------------------------------------
@@ -236,6 +255,9 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
       void supabase.removeChannel(matchupsChannel);
     };
     // Re-subscribe only if the pokemon list identity changes (practically never).
+    // ordinalBias and finalEvosOnly are intentionally excluded: they don't affect
+    // the Realtime subscriptions or the initial fetch — only computePair consumes
+    // them, and the separate "recompute on settings change" effect below handles that.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pokemon]);
 
@@ -246,19 +268,19 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
     // Snapshot the latest live state synchronously and derive the next pair.
     // This runs outside of React's render cycle so the new pair is ready
     // (or computed) before the component re-renders.
-    setCurrentPair(computePair(liveStateRef.current));
-  }, [computePair]);
+    setCurrentPair(computePair(liveStateRef.current, ordinalBias));
+  }, [computePair, ordinalBias]);
 
   // -------------------------------------------------------------------------
   // If pokemon list changes identity (e.g. data refetch), recompute from
   // the current live snapshot so we don't show a stale pair with bad IDs.
   // -------------------------------------------------------------------------
-  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional — recompute when pokemon list changes
+  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional — recompute when pokemon list or bias changes
   useEffect(() => {
     if (!liveStateRef.current.isLoading) {
-      setCurrentPair(computePair(liveStateRef.current));
+      setCurrentPair(computePair(liveStateRef.current, ordinalBias));
     }
-  }, [pokemon, computePair]);
+  }, [pokemon, computePair, ordinalBias, finalEvosOnly]);
 
   return useMemo(
     () => ({ pair: currentPair, advance }),
