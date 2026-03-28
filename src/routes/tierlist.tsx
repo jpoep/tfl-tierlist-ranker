@@ -45,12 +45,6 @@ function TierlistPage() {
         </p>
       </div>
 
-      {/* Confidence bar — full width on this page */}
-      <ConfidenceBar
-        confidence={result.confidence}
-        totalVotes={result.totalVotes}
-      />
-
       {!result.hasSufficientData && (
         <div className="rounded-xl border border-yellow-500/20 bg-yellow-500/5 px-4 py-3">
           <p className="text-sm text-yellow-400/80">

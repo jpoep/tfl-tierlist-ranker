@@ -49,19 +49,47 @@ export const Faq = () => {
   if (FAQ_ITEMS.length === 0) return null;
 
   return (
-    <section className="w-full max-w-xl">
-      <h3 className="mb-2 text-xs font-semibold uppercase tracking-widest text-white/20">
-        FAQ
-      </h3>
-      <dl>
-        {FAQ_ITEMS.map((item) => (
-          <FaqItem
-            key={item.question}
-            question={item.question}
-            answer={item.answer}
-          />
-        ))}
-      </dl>
-    </section>
+    <>
+      {/* Mobile: collapsed by default */}
+      <details className="group w-full max-w-xl border-t border-white/10 pt-4 lg:hidden">
+        <summary className="flex cursor-pointer list-none items-center justify-center gap-2 rounded-lg px-3 py-1.5 text-sm text-white/30 transition-colors hover:bg-white/5 hover:text-white/60 active:scale-95 [&::-webkit-details-marker]:hidden">
+          Fragen?
+          <span className="text-xs transition-transform duration-200 group-open:rotate-180">
+            &#8964;
+          </span>
+        </summary>
+        <dl className="mt-2">
+          {FAQ_ITEMS.map((item) => (
+            <FaqItem
+              key={item.question}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
+        </dl>
+      </details>
+
+      {/* Desktop: expanded by default, still collapsible */}
+      <details
+        open
+        className="group hidden w-full max-w-xl border-t border-white/10 pt-4 lg:block"
+      >
+        <summary className="flex cursor-pointer list-none items-center justify-center gap-2 rounded-lg px-3 py-1.5 text-sm text-white/30 transition-colors hover:bg-white/5 hover:text-white/60 active:scale-95 [&::-webkit-details-marker]:hidden">
+          Fragen?
+          <span className="text-xs transition-transform duration-200 group-open:rotate-180">
+            &#8964;
+          </span>
+        </summary>
+        <dl className="mt-2">
+          {FAQ_ITEMS.map((item) => (
+            <FaqItem
+              key={item.question}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
+        </dl>
+      </details>
+    </>
   );
 };

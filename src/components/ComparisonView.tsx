@@ -194,8 +194,8 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
       {/* Keyboard hints — only shown while idle */}
       {!isDone && (
         <div className="flex items-center gap-4 text-xs">
-          <KeyHint labels={["←", "J"]} description="links gewinnt" />
-          <KeyHint labels={["→", "L"]} description="rechts gewinnt" />
+          <KeyHint labels={["←", "J"]} description="links picken" />
+          <KeyHint labels={["→", "L"]} description="rechts picken" />
           <KeyHint labels={["Space"]} description="skip" />
         </div>
       )}
