@@ -214,9 +214,9 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
         )}
       </div>
 
-      {/* Keyboard hints — only shown while idle */}
+      {/* Keyboard hints — only shown while idle on non-touch screens */}
       {!isDone && (
-        <div className="flex items-center gap-4 text-xs">
+        <div className="hidden items-center gap-4 text-xs sm:flex">
           <KeyHint labels={["←", "J"]} description="links picken" />
           <KeyHint labels={["→", "L"]} description="rechts picken" />
           <KeyHint labels={["Space"]} description="skip" />
