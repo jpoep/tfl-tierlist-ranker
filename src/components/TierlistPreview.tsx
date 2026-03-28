@@ -88,7 +88,9 @@ const TierRow = ({ tier, assignments, compact }: TierRowProps) => {
       {/* Pokemon chips */}
       <div className="flex flex-1 flex-wrap items-center gap-1.5 bg-white/2 p-2">
         {assignments.length === 0 ? (
-          <span className="text-xs text-white/20 italic">Noch keine Pokémon</span>
+          <span className="text-xs text-white/20 italic">
+            Noch keine Pokémon
+          </span>
         ) : (
           assignments.map(({ pokemon, rating }) => (
             <div
@@ -134,6 +136,8 @@ export const TierlistPreview = ({
 }: TierlistPreviewProps) => {
   return (
     <div className="flex w-full flex-col gap-3">
+      {/* Confidence bar */}
+      <ConfidenceBar confidence={confidence} totalVotes={totalVotes} />
       {/* Header */}
       <div className="flex items-center justify-between gap-2">
         <h3
@@ -173,9 +177,6 @@ export const TierlistPreview = ({
           />
         ))}
       </div>
-
-      {/* Confidence bar */}
-      <ConfidenceBar confidence={confidence} totalVotes={totalVotes} />
     </div>
   );
 };

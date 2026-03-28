@@ -41,7 +41,7 @@ function TierlistPage() {
         </h1>
         <p className="text-sm text-white/40">
           {totalPokemon} Pokémon geranked &middot;{" "}
-          {result.totalVotes.toLocaleString()} votes cast
+          {result.totalVotes.toLocaleString()} Stimmen abgegeben
         </p>
       </div>
 

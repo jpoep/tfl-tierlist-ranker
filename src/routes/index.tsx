@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ComparisonView } from "@/components/ComparisonView";
+import { Faq } from "@/components/Faq";
 import { TierlistPreview } from "@/components/TierlistPreview";
 import { useNextPair } from "@/hooks/useNextPair";
 import { usePokemon } from "@/hooks/usePokemon";
@@ -28,7 +29,7 @@ function VotePage() {
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="flex flex-col items-center gap-3 text-white/40">
           <div className="h-6 w-6 animate-spin rounded-full border-2 border-white/20 border-t-white/60" />
-          <span className="text-sm">Loading Pokédex…</span>
+          <span className="text-sm">Pokédex wird geladen…</span>
         </div>
       </div>
     );
@@ -74,6 +75,8 @@ function VotePage() {
             pair={pair}
           />
         )}
+
+        <Faq />
       </div>
 
       {/* Right: live tierlist sidebar */}
@@ -90,7 +93,7 @@ function VotePage() {
         ) : (
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-center">
             <p className="text-sm text-white/30">
-              Cast a few votes to see the tierlist take shape.
+              Gib ein paar Stimmen ab, um die Tierlist zu generieren!
             </p>
           </div>
         )}
