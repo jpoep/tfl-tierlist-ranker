@@ -60,6 +60,53 @@ const checkExisting = Effect.tryPromise({
   }),
 );
 
+const pruneStale = (asset: PokemonAsset) =>
+  Effect.gen(function* () {
+    // Fetch every name currently in the DB
+    const { data, error } = yield* Effect.tryPromise({
+      try: () => supabase.from("pokemon").select("name"),
+      catch: (cause) =>
+        new Error(`Failed to fetch pokemon names from DB: ${String(cause)}`),
+    });
+
+    if (error) {
+      return yield* Effect.fail(
+        new Error(`Supabase error fetching names: ${error.message}`),
+      );
+    }
+
+    const assetNames = new Set(asset.pokemon.map((p) => p.name));
+    const staleNames = (data ?? [])
+      .map((row) => row.name)
+      .filter((name) => !assetNames.has(name));
+
+    if (staleNames.length === 0) {
+      yield* Console.log("  ✓ No stale Pokémon to prune.");
+      return 0;
+    }
+
+    yield* Console.log(
+      `  Pruning ${staleNames.length} stale Pokémon (cascade will remove their ratings + matchups):\n` +
+        staleNames.map((n) => `    - ${n}`).join("\n"),
+    );
+
+    // ON DELETE CASCADE handles ratings + matchups automatically
+    const { error: deleteError } = yield* Effect.tryPromise({
+      try: () => supabase.from("pokemon").delete().in("name", staleNames),
+      catch: (cause) =>
+        new Error(`Failed to delete stale pokemon: ${String(cause)}`),
+    });
+
+    if (deleteError) {
+      return yield* Effect.fail(
+        new Error(`Supabase delete error: ${deleteError.message}`),
+      );
+    }
+
+    yield* Console.log(`  ✓ Pruned ${staleNames.length} stale Pokémon.`);
+    return staleNames.length;
+  });
+
 const seedPokemon = (asset: PokemonAsset) =>
   Effect.gen(function* () {
     yield* Console.log(
@@ -163,6 +210,10 @@ const main = Effect.gen(function* () {
     `Loaded pokemon.json: ${asset.pokemon.length} Pokémon (generated ${asset.generatedAt})\n`,
   );
 
+  yield* Console.log("Pruning stale Pokémon…");
+  yield* pruneStale(asset);
+
+  yield* Console.log("");
   const existingCount = yield* checkExisting;
 
   if (existingCount === asset.pokemon.length) {
