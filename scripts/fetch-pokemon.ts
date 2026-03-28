@@ -69,18 +69,6 @@ interface PokeAPISpecies {
 		is_default: boolean;
 		pokemon: PokeAPINamedResource;
 	}>;
-	evolution_chain: {
-		url: string;
-	};
-}
-
-interface PokeAPIEvoChainLink {
-	species: PokeAPINamedResource;
-	evolves_to: PokeAPIEvoChainLink[];
-}
-
-interface PokeAPIEvoChain {
-	chain: PokeAPIEvoChainLink;
 }
 
 interface PokeAPIPokemon {
@@ -157,26 +145,12 @@ const fetchPokedex = (name: string): Effect.Effect<PokeAPIPokedex, FetchError | 
 const fetchSpecies = (name: string): Effect.Effect<PokeAPISpecies, FetchError | NetworkError> =>
 	fetchJson<PokeAPISpecies>(`${POKEAPI_BASE}/pokemon-species/${name}`);
 
-const fetchEvoChain = (url: string): Effect.Effect<PokeAPIEvoChain, FetchError | NetworkError> =>
-	fetchJson<PokeAPIEvoChain>(url);
-
 const fetchPokemon = (name: string): Effect.Effect<PokeAPIPokemon, FetchError | NetworkError> =>
 	fetchJson<PokeAPIPokemon>(`${POKEAPI_BASE}/pokemon/${name}`);
 
 // ---------------------------------------------------------------------------
 // Transformation helpers
 // ---------------------------------------------------------------------------
-
-/**
- * Walks an evolution chain link recursively and collects the names of all
- * species that have no further evolutions (i.e. final-stage Pokémon).
- */
-const collectFinalEvoNames = (link: PokeAPIEvoChainLink): string[] => {
-	if (link.evolves_to.length === 0) {
-		return [link.species.name];
-	}
-	return link.evolves_to.flatMap(collectFinalEvoNames);
-};
 
 const toDisplayName = (species: PokeAPISpecies): string => {
 	const englishName = species.names.find((n) => n.language.name === "en");
@@ -231,9 +205,6 @@ const fetchGen9SpeciesNames = (): Effect.Effect<string[], FetchError | NetworkEr
 /**
  * Given a species name, fetches its species + default form data
  * and builds a Pokemon record.
- *
- * isFinalEvo is determined by fetching the evolution chain and checking
- * whether this species appears as a leaf node (evolves_to is empty).
  */
 const fetchPokemonRecord = (
 	speciesName: string,
@@ -245,13 +216,7 @@ const fetchPokemonRecord = (
 		const defaultVariety = species.varieties.find((v) => v.is_default);
 		const formName = defaultVariety?.pokemon.name ?? speciesName;
 
-		const [pokemon, evoChain] = yield* Effect.all(
-			[fetchPokemon(formName), fetchEvoChain(species.evolution_chain.url)],
-			{ concurrency: 2 },
-		);
-
-		const finalEvoNames = new Set(collectFinalEvoNames(evoChain.chain));
-		const isFinalEvo = finalEvoNames.has(species.name);
+		const pokemon = yield* fetchPokemon(formName);
 
 		const record: Pokemon = {
 			id: species.id,
@@ -261,7 +226,6 @@ const fetchPokemonRecord = (
 			type1: pokemon.types.find((t) => t.slot === 1)?.type.name ?? "normal",
 			type2: pokemon.types.find((t) => t.slot === 2)?.type.name ?? null,
 			bst: calcBST(pokemon),
-			isFinalEvo,
 		};
 
 		return record;

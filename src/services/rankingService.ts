@@ -1,16 +1,8 @@
 import { Data, Effect } from "effect";
-import type { MatchupRow, RatingRow } from "@/lib/db-types";
 import { supabase } from "@/lib/supabase";
+import type { RatingRow, MatchupRow } from "@/lib/db-types";
 import { applyMatchResult, type RankingError } from "@/ranking/openskill";
-import pokemonAsset from "@/assets/pokemon.json";
 import type { Pokemon } from "@/types/pokemon";
-
-/** Lookup map from national dex ID → isFinalEvo, built once from the static asset. */
-const finalEvoById = new Map<number, boolean>(
-  (
-    pokemonAsset as { pokemon: Array<{ id: number; isFinalEvo: boolean }> }
-  ).pokemon.map((p) => [p.id, p.isFinalEvo]),
-);
 
 // ---------------------------------------------------------------------------
 // Errors
@@ -210,9 +202,6 @@ export const getAllPokemon = (): Effect.Effect<Pokemon[], DbError> =>
       type1: row.type1,
       type2: row.type2 ?? null,
       bst: row.bst,
-      // isFinalEvo is a client-side field derived from the static asset;
-      // it is not stored in the Supabase pokemon table.
-      isFinalEvo: finalEvoById.get(row.id) ?? true,
     }));
   }, "getAllPokemon");
 

@@ -14,10 +14,12 @@ export const pokemonQueryKey = ["pokemon"] as const;
  * rather than fetching it independently.
  */
 export const usePokemon = () =>
-	useQuery<Pokemon[], Error>({
-		queryKey: pokemonQueryKey,
-		queryFn: () =>
-			Effect.runPromise(getAllPokemon().pipe(Effect.mapError((e) => new Error(e.message)))),
-		staleTime: Infinity,
-		gcTime: Infinity,
-	});
+  useQuery<Pokemon[], Error>({
+    queryKey: pokemonQueryKey,
+    queryFn: () =>
+      Effect.runPromise(
+        getAllPokemon().pipe(Effect.mapError((e) => new Error(e.message))),
+      ),
+    staleTime: Infinity,
+    gcTime: Infinity,
+  });
