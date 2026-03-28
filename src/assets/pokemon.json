@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-03-28T10:23:48.969Z",
-  "count": 416,
+  "count": 380,
   "pokemon": [
     {
       "id": 3,
@@ -473,17 +473,6 @@
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png",
       "type1": "poison",
       "type2": "fairy",
-      "bst": 490
-    },
-    {
-      "id": 128,
-      "name": "tauros",
-      "displayName": "Tauros",
-      "formName": "tauros",
-      "formDisplayName": "Tauros",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
-      "type1": "normal",
-      "type2": null,
       "bst": 490
     },
     {
@@ -2313,28 +2302,6 @@
       "bst": 530
     },
     {
-      "id": 658,
-      "name": "greninja-ash",
-      "displayName": "Greninja",
-      "formName": "greninja-ash",
-      "formDisplayName": "Greninja Ash",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10117.png",
-      "type1": "water",
-      "type2": "dark",
-      "bst": 640
-    },
-    {
-      "id": 658,
-      "name": "greninja-battle-bond",
-      "displayName": "Greninja",
-      "formName": "greninja-battle-bond",
-      "formDisplayName": "Greninja Battle Bond",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10116.png",
-      "type1": "water",
-      "type2": "dark",
-      "bst": 530
-    },
-    {
       "id": 663,
       "name": "talonflame",
       "displayName": "Talonflame",
@@ -2632,34 +2599,12 @@
       "bst": 418
     },
     {
-      "id": 735,
-      "name": "gumshoos-totem",
-      "displayName": "Gumshoos",
-      "formName": "gumshoos-totem",
-      "formDisplayName": "Gumshoos Totem",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10121.png",
-      "type1": "normal",
-      "type2": null,
-      "bst": 418
-    },
-    {
       "id": 738,
       "name": "vikavolt",
       "displayName": "Vikavolt",
       "formName": "vikavolt",
       "formDisplayName": "Vikavolt",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png",
-      "type1": "bug",
-      "type2": "electric",
-      "bst": 500
-    },
-    {
-      "id": 738,
-      "name": "vikavolt-totem",
-      "displayName": "Vikavolt",
-      "formName": "vikavolt-totem",
-      "formDisplayName": "Vikavolt Totem",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10122.png",
       "type1": "bug",
       "type2": "electric",
       "bst": 500
@@ -2726,17 +2671,6 @@
       "formName": "ribombee",
       "formDisplayName": "Ribombee",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png",
-      "type1": "bug",
-      "type2": "fairy",
-      "bst": 464
-    },
-    {
-      "id": 743,
-      "name": "ribombee-totem",
-      "displayName": "Ribombee",
-      "formName": "ribombee-totem",
-      "formDisplayName": "Ribombee Totem",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10150.png",
       "type1": "bug",
       "type2": "fairy",
       "bst": 464
@@ -2886,149 +2820,6 @@
     },
     {
       "id": 774,
-      "name": "minior-blue",
-      "displayName": "Minior",
-      "formName": "minior-blue",
-      "formDisplayName": "Minior Blue",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10140.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
-      "name": "minior-blue-meteor",
-      "displayName": "Minior",
-      "formName": "minior-blue-meteor",
-      "formDisplayName": "Minior Blue Meteor",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10133.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 440
-    },
-    {
-      "id": 774,
-      "name": "minior-green",
-      "displayName": "Minior",
-      "formName": "minior-green",
-      "formDisplayName": "Minior Green",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10139.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
-      "name": "minior-green-meteor",
-      "displayName": "Minior",
-      "formName": "minior-green-meteor",
-      "formDisplayName": "Minior Green Meteor",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10132.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 440
-    },
-    {
-      "id": 774,
-      "name": "minior-indigo",
-      "displayName": "Minior",
-      "formName": "minior-indigo",
-      "formDisplayName": "Minior Indigo",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10141.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
-      "name": "minior-indigo-meteor",
-      "displayName": "Minior",
-      "formName": "minior-indigo-meteor",
-      "formDisplayName": "Minior Indigo Meteor",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10134.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 440
-    },
-    {
-      "id": 774,
-      "name": "minior-orange",
-      "displayName": "Minior",
-      "formName": "minior-orange",
-      "formDisplayName": "Minior Orange",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10137.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
-      "name": "minior-orange-meteor",
-      "displayName": "Minior",
-      "formName": "minior-orange-meteor",
-      "formDisplayName": "Minior Orange Meteor",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10130.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 440
-    },
-    {
-      "id": 774,
-      "name": "minior-red",
-      "displayName": "Minior",
-      "formName": "minior-red",
-      "formDisplayName": "Minior Red",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10136.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
-      "name": "minior-red-meteor",
-      "displayName": "Minior",
-      "formName": "minior-red-meteor",
-      "formDisplayName": "Minior Red Meteor",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 440
-    },
-    {
-      "id": 774,
-      "name": "minior-violet",
-      "displayName": "Minior",
-      "formName": "minior-violet",
-      "formDisplayName": "Minior Violet",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10142.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
-      "name": "minior-violet-meteor",
-      "displayName": "Minior",
-      "formName": "minior-violet-meteor",
-      "formDisplayName": "Minior Violet Meteor",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10135.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 440
-    },
-    {
-      "id": 774,
-      "name": "minior-yellow",
-      "displayName": "Minior",
-      "formName": "minior-yellow",
-      "formDisplayName": "Minior Yellow",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10138.png",
-      "type1": "rock",
-      "type2": "flying",
-      "bst": 500
-    },
-    {
-      "id": 774,
       "name": "minior-yellow-meteor",
       "displayName": "Minior",
       "formName": "minior-yellow-meteor",
@@ -3051,44 +2842,11 @@
     },
     {
       "id": 778,
-      "name": "mimikyu-busted",
-      "displayName": "Mimikyu",
-      "formName": "mimikyu-busted",
-      "formDisplayName": "Mimikyu Busted",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10143.png",
-      "type1": "ghost",
-      "type2": "fairy",
-      "bst": 476
-    },
-    {
-      "id": 778,
       "name": "mimikyu-disguised",
       "displayName": "Mimikyu",
       "formName": "mimikyu-disguised",
       "formDisplayName": "Mimikyu Disguised",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
-      "type1": "ghost",
-      "type2": "fairy",
-      "bst": 476
-    },
-    {
-      "id": 778,
-      "name": "mimikyu-totem-busted",
-      "displayName": "Mimikyu",
-      "formName": "mimikyu-totem-busted",
-      "formDisplayName": "Mimikyu Totem Busted",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10145.png",
-      "type1": "ghost",
-      "type2": "fairy",
-      "bst": 476
-    },
-    {
-      "id": 778,
-      "name": "mimikyu-totem-disguised",
-      "displayName": "Mimikyu",
-      "formName": "mimikyu-totem-disguised",
-      "formDisplayName": "Mimikyu Totem Disguised",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10144.png",
       "type1": "ghost",
       "type2": "fairy",
       "bst": 476
@@ -3111,17 +2869,6 @@
       "formName": "kommo-o",
       "formDisplayName": "Kommo-o",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
-      "type1": "dragon",
-      "type2": "fighting",
-      "bst": 600
-    },
-    {
-      "id": 784,
-      "name": "kommo-o-totem",
-      "displayName": "Kommo-o",
-      "formName": "kommo-o-totem",
-      "formDisplayName": "Kommo-o Totem",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10146.png",
       "type1": "dragon",
       "type2": "fighting",
       "bst": 600
@@ -3243,28 +2990,6 @@
       "formName": "cramorant",
       "formDisplayName": "Cramorant",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
-      "type1": "flying",
-      "type2": "water",
-      "bst": 475
-    },
-    {
-      "id": 845,
-      "name": "cramorant-gorging",
-      "displayName": "Cramorant",
-      "formName": "cramorant-gorging",
-      "formDisplayName": "Cramorant Gorging",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10183.png",
-      "type1": "flying",
-      "type2": "water",
-      "bst": 475
-    },
-    {
-      "id": 845,
-      "name": "cramorant-gulping",
-      "displayName": "Cramorant",
-      "formName": "cramorant-gulping",
-      "formDisplayName": "Cramorant Gulping",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10182.png",
       "type1": "flying",
       "type2": "water",
       "bst": 475
@@ -3402,17 +3127,6 @@
       "bst": 470
     },
     {
-      "id": 875,
-      "name": "eiscue-noice",
-      "displayName": "Eiscue",
-      "formName": "eiscue-noice",
-      "formDisplayName": "Eiscue Noice",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10185.png",
-      "type1": "ice",
-      "type2": null,
-      "bst": 470
-    },
-    {
       "id": 876,
       "name": "indeedee-female",
       "displayName": "Indeedee",
@@ -3441,17 +3155,6 @@
       "formName": "morpeko-full-belly",
       "formDisplayName": "Morpeko Full Belly",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
-      "type1": "electric",
-      "type2": "dark",
-      "bst": 436
-    },
-    {
-      "id": 877,
-      "name": "morpeko-hangry",
-      "displayName": "Morpeko",
-      "formName": "morpeko-hangry",
-      "formDisplayName": "Morpeko Hangry",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10187.png",
       "type1": "electric",
       "type2": "dark",
       "bst": 436
@@ -3634,17 +3337,6 @@
     },
     {
       "id": 925,
-      "name": "maushold-family-of-four",
-      "displayName": "Maushold",
-      "formName": "maushold-family-of-four",
-      "formDisplayName": "Maushold Family Of Four",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
-      "type1": "normal",
-      "type2": null,
-      "bst": 470
-    },
-    {
-      "id": 925,
       "name": "maushold-family-of-three",
       "displayName": "Maushold",
       "formName": "maushold-family-of-three",
@@ -3678,44 +3370,11 @@
     },
     {
       "id": 931,
-      "name": "squawkabilly-blue-plumage",
-      "displayName": "Squawkabilly",
-      "formName": "squawkabilly-blue-plumage",
-      "formDisplayName": "Squawkabilly Blue Plumage",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10260.png",
-      "type1": "normal",
-      "type2": "flying",
-      "bst": 417
-    },
-    {
-      "id": 931,
       "name": "squawkabilly-green-plumage",
       "displayName": "Squawkabilly",
       "formName": "squawkabilly-green-plumage",
       "formDisplayName": "Squawkabilly Green Plumage",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
-      "type1": "normal",
-      "type2": "flying",
-      "bst": 417
-    },
-    {
-      "id": 931,
-      "name": "squawkabilly-white-plumage",
-      "displayName": "Squawkabilly",
-      "formName": "squawkabilly-white-plumage",
-      "formDisplayName": "Squawkabilly White Plumage",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10262.png",
-      "type1": "normal",
-      "type2": "flying",
-      "bst": 417
-    },
-    {
-      "id": 931,
-      "name": "squawkabilly-yellow-plumage",
-      "displayName": "Squawkabilly",
-      "formName": "squawkabilly-yellow-plumage",
-      "formDisplayName": "Squawkabilly Yellow Plumage",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10261.png",
       "type1": "normal",
       "type2": "flying",
       "bst": 417
@@ -4013,28 +3672,6 @@
       "formName": "tatsugiri-curly",
       "formDisplayName": "Tatsugiri Curly",
       "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
-      "type1": "dragon",
-      "type2": "water",
-      "bst": 475
-    },
-    {
-      "id": 978,
-      "name": "tatsugiri-droopy",
-      "displayName": "Tatsugiri",
-      "formName": "tatsugiri-droopy",
-      "formDisplayName": "Tatsugiri Droopy",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10258.png",
-      "type1": "dragon",
-      "type2": "water",
-      "bst": 475
-    },
-    {
-      "id": 978,
-      "name": "tatsugiri-stretchy",
-      "displayName": "Tatsugiri",
-      "formName": "tatsugiri-stretchy",
-      "formDisplayName": "Tatsugiri Stretchy",
-      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10259.png",
       "type1": "dragon",
       "type2": "water",
       "bst": 475
