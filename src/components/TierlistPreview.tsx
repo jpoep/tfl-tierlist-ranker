@@ -94,7 +94,7 @@ const TierRow = ({ tier, assignments, compact }: TierRowProps) => {
         ) : (
           assignments.map(({ pokemon, rating }) => (
             <div
-              key={pokemon.id}
+              key={pokemon.name}
               title={`${pokemon.displayName} — ordinal: ${rating.ordinal.toFixed(2)}, σ: ${rating.sigma.toFixed(2)}, votes: ${rating.matchCount}`}
               className="flex items-center gap-1 rounded-md bg-white/5 px-1.5 py-0.5 hover:bg-white/10 transition-colors"
             >
