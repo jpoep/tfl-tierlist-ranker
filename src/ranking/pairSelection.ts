@@ -1,4 +1,4 @@
-import { Array as Arr, Data, Effect, Option } from "effect";
+import { Array as Arr, Data, Effect } from "effect";
 import type { Rating } from "@/types/rating";
 import type { Pokemon } from "@/types/pokemon";
 import { INITIAL_SIGMA } from "./openskill";
@@ -97,24 +97,22 @@ const uncertaintyScore = (r: Rating): number =>
 
 /**
  * Builds a Set of recently-seen pair keys from a list of matchup records.
- * The key is canonical: `min(a,b)-max(a,b)` so order doesn't matter.
+ * The key is canonical: alphabetically sorted so order doesn't matter.
  */
 const buildRecentPairSet = (
-  recentMatchups: Array<{ winnerId: number; loserId: number }>,
+  recentMatchups: Array<{ winnerName: string; loserName: string }>,
 ): Set<string> => {
   const seen = new Set<string>();
   for (const m of recentMatchups) {
-    const a = Math.min(m.winnerId, m.loserId);
-    const b = Math.max(m.winnerId, m.loserId);
-    seen.add(`${a}-${b}`);
+    const [a, b] = [m.winnerName, m.loserName].sort();
+    seen.add(`${a}|${b}`);
   }
   return seen;
 };
 
-const pairKey = (a: number, b: number): string => {
-  const lo = Math.min(a, b);
-  const hi = Math.max(a, b);
-  return `${lo}-${hi}`;
+const pairKey = (a: string, b: string): string => {
+  const [lo, hi] = [a, b].sort();
+  return `${lo}|${hi}`;
 };
 
 // ---------------------------------------------------------------------------
@@ -141,7 +139,7 @@ const pairKey = (a: number, b: number): string => {
  */
 export const selectNextPair = (
   pool: RatedPokemon[],
-  recentMatchups: Array<{ winnerId: number; loserId: number }>,
+  recentMatchups: Array<{ winnerName: string; loserName: string }>,
 ): Effect.Effect<SelectedPair, PairSelectionError> =>
   Effect.gen(function* () {
     if (pool.length < 2) {
@@ -204,7 +202,7 @@ export const selectNextPair = (
       let score = UNCERTAINTY_WEIGHT * uncScore + PROXIMITY_WEIGHT * proxScore;
 
       // Apply recent-pair penalty
-      const key = pairKey(left.pokemon.id, right.pokemon.id);
+      const key = pairKey(left.pokemon.name, right.pokemon.name);
       if (recentPairs.has(key)) {
         score *= RECENT_PAIR_WEIGHT_FACTOR;
       }
@@ -227,11 +225,5 @@ export const selectNextPair = (
       (best, candidate) => (candidate.score > best.score ? candidate : best),
     );
 
-    return Option.some(best).pipe(
-      Option.map(({ left, right }) => ({ left, right })),
-      Option.getOrElse(() => {
-        const [left, right] = candidates;
-        return { left: left.left, right: right.left };
-      }),
-    );
+    return { left: best.left, right: best.right };
   });

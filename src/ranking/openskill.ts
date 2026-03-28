@@ -29,10 +29,10 @@ export const INITIAL_SIGMA = 25 / 3;
 /**
  * Creates a fresh OpenSkill rating for a newly seeded Pokémon.
  */
-export const createInitialRating = (pokemonId: number): Rating => {
+export const createInitialRating = (pokemonName: string): Rating => {
   const r = rating({ mu: INITIAL_MU, sigma: INITIAL_SIGMA });
   return {
-    pokemonId,
+    pokemonName,
     mu: r.mu,
     sigma: r.sigma,
     ordinal: ordinal(r),
@@ -51,7 +51,7 @@ const toOSRating = (r: Rating): OSRating =>
  * preserving the pokemonId and incrementing matchCount.
  */
 const fromOSRating = (r: OSRating, existing: Rating): Rating => ({
-  pokemonId: existing.pokemonId,
+  pokemonName: existing.pokemonName,
   mu: r.mu,
   sigma: r.sigma,
   ordinal: ordinal(r),

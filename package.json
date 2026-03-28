@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "fetch-pokemon": "bun run scripts/fetch-pokemon.ts",
     "seed-supabase": "bun run scripts/seed-supabase.ts",
-    "gen-types": "bunx supabase gen types typescript --project-id YOUR_PROJECT_REF --schema public > src/lib/database.types.ts"
+    "gen-types": "bunx supabase gen types --local --schema public 2>/dev/null > src/lib/database.types.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.100.1",

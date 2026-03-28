@@ -11,7 +11,7 @@ interface ComparisonViewProps {
 
 type VoteState =
   | { status: "idle" }
-  | { status: "voted"; winnerId: number }
+  | { status: "voted"; winnerName: string }
   | { status: "skipped" }
   | { status: "error"; message: string };
 
@@ -50,12 +50,12 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
   }, [pair]);
 
   const handleVote = useCallback(
-    (winnerId: number, loserId: number) => {
+    (winnerName: string, loserName: string) => {
       if (voteState.status !== "idle") return;
 
-      setVoteState({ status: "voted", winnerId });
+      setVoteState({ status: "voted", winnerName });
 
-      Effect.runPromise(recordVote(winnerId, loserId))
+      Effect.runPromise(recordVote(winnerName, loserName))
         .then(() => {
           setTimeout(onAdvance, ADVANCE_DELAY_MS);
         })
@@ -75,7 +75,9 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
 
     setVoteState({ status: "skipped" });
 
-    Effect.runPromise(recordSkip(pair.left.pokemon.id, pair.right.pokemon.id))
+    Effect.runPromise(
+      recordSkip(pair.left.pokemon.name, pair.right.pokemon.name),
+    )
       .then(() => {
         setTimeout(onAdvance, ADVANCE_DELAY_MS);
       })
@@ -88,8 +90,8 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
       });
   }, [
     voteState.status,
-    pair.left.pokemon.id,
-    pair.right.pokemon.id,
+    pair.left.pokemon.name,
+    pair.right.pokemon.name,
     onAdvance,
   ]);
 
@@ -107,10 +109,10 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
 
       if (e.key === "ArrowLeft" || e.key === "j") {
         e.preventDefault();
-        handleVote(pair.left.pokemon.id, pair.right.pokemon.id);
+        handleVote(pair.left.pokemon.name, pair.right.pokemon.name);
       } else if (e.key === "ArrowRight" || e.key === "l") {
         e.preventDefault();
-        handleVote(pair.right.pokemon.id, pair.left.pokemon.id);
+        handleVote(pair.right.pokemon.name, pair.left.pokemon.name);
       } else if (e.key === " ") {
         e.preventDefault();
         handleSkip();
@@ -119,7 +121,7 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [handleVote, handleSkip, pair.left.pokemon.id, pair.right.pokemon.id]);
+  }, [handleVote, handleSkip, pair.left.pokemon.name, pair.right.pokemon.name]);
 
   const { left, right } = pair;
 
@@ -144,12 +146,12 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
           pokemon={left.pokemon}
           onClick={
             !isDone
-              ? () => handleVote(left.pokemon.id, right.pokemon.id)
+              ? () => handleVote(left.pokemon.name, right.pokemon.name)
               : undefined
           }
-          selected={isVoted && voteState.winnerId === left.pokemon.id}
+          selected={isVoted && voteState.winnerName === left.pokemon.name}
           dimmed={
-            (isVoted && voteState.winnerId !== left.pokemon.id) || isSkipped
+            (isVoted && voteState.winnerName !== left.pokemon.name) || isSkipped
           }
         />
 
@@ -170,12 +172,13 @@ export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
           pokemon={right.pokemon}
           onClick={
             !isDone
-              ? () => handleVote(right.pokemon.id, left.pokemon.id)
+              ? () => handleVote(right.pokemon.name, left.pokemon.name)
               : undefined
           }
-          selected={isVoted && voteState.winnerId === right.pokemon.id}
+          selected={isVoted && voteState.winnerName === right.pokemon.name}
           dimmed={
-            (isVoted && voteState.winnerId !== right.pokemon.id) || isSkipped
+            (isVoted && voteState.winnerName !== right.pokemon.name) ||
+            isSkipped
           }
         />
       </div>

@@ -80,7 +80,8 @@ export const useTierlist = (
 
   // Keep a ref to the latest ratings so Realtime callbacks can do
   // surgical updates without needing to close over stale state.
-  const ratingsRef = useRef<Map<number, RatingRow>>(new Map());
+  // Keyed by pokemon_name (the unique text slug).
+  const ratingsRef = useRef<Map<string, RatingRow>>(new Map());
 
   // -------------------------------------------------------------------------
   // Initial data fetch + Realtime subscriptions
@@ -109,8 +110,8 @@ export const useTierlist = (
         return;
       }
 
-      const ratingsMap = new Map<number, RatingRow>(
-        (ratingsResult.data ?? []).map((r) => [r.pokemon_id, r]),
+      const ratingsMap = new Map<string, RatingRow>(
+        (ratingsResult.data ?? []).map((r) => [r.pokemon_name, r]),
       );
       ratingsRef.current = ratingsMap;
 
@@ -138,11 +139,11 @@ export const useTierlist = (
         { event: "UPDATE", schema: "public", table: "ratings" },
         (payload) => {
           const updated = payload.new as RatingRow;
-          ratingsRef.current.set(updated.pokemon_id, updated);
+          ratingsRef.current.set(updated.pokemon_name, updated);
 
           setState((prev) => {
             const next = prev.ratings.map((r) =>
-              r.pokemon_id === updated.pokemon_id ? updated : r,
+              r.pokemon_name === updated.pokemon_name ? updated : r,
             );
             return { ...prev, ratings: next };
           });
@@ -189,18 +190,18 @@ export const useTierlist = (
     if (state.pokemon.length === 0 || state.ratings.length === 0)
       return undefined;
 
-    const ratingMap = new Map<number, RatingRow>(
-      state.ratings.map((r) => [r.pokemon_id, r]),
+    const ratingMap = new Map<string, RatingRow>(
+      state.ratings.map((r) => [r.pokemon_name, r]),
     );
 
     const ratedPokemon = state.pokemon.flatMap((p) => {
-      const row = ratingMap.get(p.id);
+      const row = ratingMap.get(p.name);
       if (!row) return [];
       return [
         {
           pokemon: p,
           rating: {
-            pokemonId: row.pokemon_id,
+            pokemonName: row.pokemon_name,
             mu: row.mu,
             sigma: row.sigma,
             ordinal: row.ordinal,

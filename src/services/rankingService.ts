@@ -25,11 +25,11 @@ export type RankingServiceError = DbError | RankingError | SeedError;
 // ---------------------------------------------------------------------------
 
 /**
- * Maps a Supabase `RatingRow` (snake_case, pokemon_id) to the app's `Rating`
- * interface (camelCase, pokemonId) used throughout ranking/ and hooks/.
+ * Maps a Supabase `RatingRow` (snake_case, pokemon_name) to the app's `Rating`
+ * interface (camelCase, pokemonName) used throughout ranking/ and hooks/.
  */
 const toRating = (row: RatingRow) => ({
-  pokemonId: row.pokemon_id,
+  pokemonName: row.pokemon_name,
   mu: row.mu,
   sigma: row.sigma,
   ordinal: row.ordinal,
@@ -41,8 +41,8 @@ const toRating = (row: RatingRow) => ({
  */
 const toMatchup = (row: MatchupRow) => ({
   id: row.id,
-  winnerId: row.winner_id,
-  loserId: row.loser_id,
+  winnerName: row.winner_name,
+  loserName: row.loser_name,
   skipped: row.skipped,
   timestamp: new Date(row.created_at).getTime(),
 });
@@ -92,8 +92,8 @@ export const seedDatabase = (
  * matchup log entry as a single atomic transaction.
  */
 export const recordVote = (
-  winnerId: number,
-  loserId: number,
+  winnerName: string,
+  loserName: string,
 ): Effect.Effect<void, RankingServiceError> =>
   Effect.gen(function* () {
     // Fetch current ratings for both participants
@@ -102,10 +102,10 @@ export const recordVote = (
         supabase
           .from("ratings")
           .select("*")
-          .in("pokemon_id", [winnerId, loserId]),
+          .in("pokemon_name", [winnerName, loserName]),
       catch: (cause) =>
         new DbError({
-          message: `Failed to fetch ratings for ${winnerId} vs ${loserId}`,
+          message: `Failed to fetch ratings for ${winnerName} vs ${loserName}`,
           cause,
         }),
     });
@@ -116,17 +116,21 @@ export const recordVote = (
       );
     }
 
-    const winnerRow = rows?.find((r) => r.pokemon_id === winnerId);
-    const loserRow = rows?.find((r) => r.pokemon_id === loserId);
+    const winnerRow = rows?.find((r) => r.pokemon_name === winnerName);
+    const loserRow = rows?.find((r) => r.pokemon_name === loserName);
 
     if (!winnerRow) {
       return yield* Effect.fail(
-        new DbError({ message: `Rating not found for pokemonId ${winnerId}` }),
+        new DbError({
+          message: `Rating not found for pokemonName ${winnerName}`,
+        }),
       );
     }
     if (!loserRow) {
       return yield* Effect.fail(
-        new DbError({ message: `Rating not found for pokemonId ${loserId}` }),
+        new DbError({
+          message: `Rating not found for pokemonName ${loserName}`,
+        }),
       );
     }
 
@@ -142,8 +146,8 @@ export const recordVote = (
     // Atomically write both updated ratings + matchup row via Postgres function
     yield* dbWrite(async () => {
       const { error } = await supabase.rpc("record_vote", {
-        p_winner_id: winnerId,
-        p_loser_id: loserId,
+        p_winner_name: winnerName,
+        p_loser_name: loserName,
         p_winner_mu: updatedWinner.mu,
         p_winner_sigma: updatedWinner.sigma,
         p_winner_ordinal: updatedWinner.ordinal,
@@ -154,7 +158,7 @@ export const recordVote = (
         p_loser_match_count: updatedLoser.matchCount,
       });
       if (error) throw new Error(error.message);
-    }, `record_vote ${winnerId} > ${loserId}`);
+    }, `record_vote ${winnerName} > ${loserName}`);
   });
 
 // ---------------------------------------------------------------------------
@@ -166,23 +170,23 @@ export const recordVote = (
  * Ratings are NOT updated for skips.
  */
 export const recordSkip = (
-  pokemonAId: number,
-  pokemonBId: number,
+  pokemonAName: string,
+  pokemonBName: string,
 ): Effect.Effect<void, DbError> =>
   dbWrite(async () => {
     const { error } = await supabase.rpc("record_skip", {
-      p_pokemon_a_id: pokemonAId,
-      p_pokemon_b_id: pokemonBId,
+      p_pokemon_a_name: pokemonAName,
+      p_pokemon_b_name: pokemonBName,
     });
     if (error) throw new Error(error.message);
-  }, `record_skip ${pokemonAId} vs ${pokemonBId}`);
+  }, `record_skip ${pokemonAName} vs ${pokemonBName}`);
 
 // ---------------------------------------------------------------------------
 // Read helpers
 // ---------------------------------------------------------------------------
 
 /**
- * Fetches all Pokémon from Supabase, sorted by id.
+ * Fetches all Pokémon from Supabase, sorted by national dex id then form name.
  * Used by usePokemon (via TanStack Query) for the static Pokémon list.
  */
 export const getAllPokemon = (): Effect.Effect<Pokemon[], DbError> =>
@@ -190,7 +194,8 @@ export const getAllPokemon = (): Effect.Effect<Pokemon[], DbError> =>
     const { data, error } = await supabase
       .from("pokemon")
       .select("*")
-      .order("id", { ascending: true });
+      .order("id", { ascending: true })
+      .order("name", { ascending: true });
 
     if (error) throw new Error(error.message);
 
@@ -198,6 +203,8 @@ export const getAllPokemon = (): Effect.Effect<Pokemon[], DbError> =>
       id: row.id,
       name: row.name,
       displayName: row.display_name,
+      formName: row.form_name,
+      formDisplayName: row.form_display_name,
       spriteUrl: row.sprite_url,
       type1: row.type1,
       type2: row.type2 ?? null,

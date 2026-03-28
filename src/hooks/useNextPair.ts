@@ -61,7 +61,8 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
 
   // Stable ref so Realtime callbacks always see the latest ratings without
   // closing over a stale snapshot from the initial render.
-  const ratingsRef = useRef<Map<number, RatingRow>>(new Map());
+  // Keyed by pokemon_name (the unique text slug).
+  const ratingsRef = useRef<Map<string, RatingRow>>(new Map());
 
   // -------------------------------------------------------------------------
   // Locked pair — only changes when advance() is called
@@ -88,18 +89,18 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
       if (state.isLoading) return undefined;
       if (pokemon.length < 2) return null;
 
-      const ratingMap = new Map<number, RatingRow>(
-        state.ratings.map((r) => [r.pokemon_id, r]),
+      const ratingMap = new Map<string, RatingRow>(
+        state.ratings.map((r) => [r.pokemon_name, r]),
       );
 
       const pool = pokemon.flatMap((p) => {
-        const row = ratingMap.get(p.id);
+        const row = ratingMap.get(p.name);
         if (!row) return [];
         return [
           {
             pokemon: p,
             rating: {
-              pokemonId: row.pokemon_id,
+              pokemonName: row.pokemon_name,
               mu: row.mu,
               sigma: row.sigma,
               ordinal: row.ordinal,
@@ -112,8 +113,8 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
       if (pool.length < 2) return null;
 
       const recentMatchups = state.recentMatchups.map((m) => ({
-        winnerId: m.winner_id,
-        loserId: m.loser_id,
+        winnerName: m.winner_name,
+        loserName: m.loser_name,
       }));
 
       const result = Effect.runSyncExit(selectNextPair(pool, recentMatchups));
@@ -161,8 +162,8 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
         return;
       }
 
-      const ratingsMap = new Map<number, RatingRow>(
-        (ratingsResult.data ?? []).map((r) => [r.pokemon_id, r]),
+      const ratingsMap = new Map<string, RatingRow>(
+        (ratingsResult.data ?? []).map((r) => [r.pokemon_name, r]),
       );
       ratingsRef.current = ratingsMap;
 
@@ -194,12 +195,12 @@ export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
         { event: "UPDATE", schema: "public", table: "ratings" },
         (payload) => {
           const updated = payload.new as RatingRow;
-          ratingsRef.current.set(updated.pokemon_id, updated);
+          ratingsRef.current.set(updated.pokemon_name, updated);
 
           setLiveState((prev) => ({
             ...prev,
             ratings: prev.ratings.map((r) =>
-              r.pokemon_id === updated.pokemon_id ? updated : r,
+              r.pokemon_name === updated.pokemon_name ? updated : r,
             ),
           }));
         },

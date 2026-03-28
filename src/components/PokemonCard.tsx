@@ -62,14 +62,16 @@ export const PokemonCard = ({
         className,
       )}
       aria-label={
-        isClickable ? `Choose ${pokemon.displayName}` : pokemon.displayName
+        isClickable
+          ? `Choose ${pokemon.formDisplayName}`
+          : pokemon.formDisplayName
       }
     >
       {/* Sprite */}
       <div className="relative flex h-28 max-w-28 items-center justify-center">
         <img
           src={pokemon.spriteUrl}
-          alt={pokemon.displayName}
+          alt={pokemon.formDisplayName}
           width={112}
           height={112}
           className={[
@@ -91,7 +93,7 @@ export const PokemonCard = ({
           selected ? "text-white" : "text-white/80",
         ].join(" ")}
       >
-        {pokemon.displayName}
+        {pokemon.formDisplayName}
       </span>
 
       {/* Types */}
