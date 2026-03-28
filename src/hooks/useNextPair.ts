@@ -1,52 +1,136 @@
-import { useEffect, useMemo, useRef, useState } from "react";
 import { Effect } from "effect";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import type { RatingRow, MatchupRow } from "@/lib/db-types";
+import type { MatchupRow, RatingRow } from "@/lib/db-types";
 import { type SelectedPair, selectNextPair } from "@/ranking/pairSelection";
 import type { Pokemon } from "@/types/pokemon";
 
 const RECENT_MATCHUP_LIMIT = 30;
 
-interface NextPairState {
+interface LiveState {
   ratings: RatingRow[];
   recentMatchups: MatchupRow[];
   isLoading: boolean;
 }
 
+export interface NextPairHandle {
+  /**
+   * The pair currently being shown to the user.
+   *
+   * undefined — initial data still loading
+   * null      — pool too small to form a pair
+   * SelectedPair — ready to display
+   */
+  pair: SelectedPair | null | undefined;
+
+  /**
+   * Call this after the local user has voted or skipped.
+   * Snapshots the current live state and recomputes the next pair from it,
+   * then locks that new pair in place until `advance` is called again.
+   */
+  advance: () => void;
+}
+
 /**
- * Reactively computes the next pair of Pokémon to show the user.
+ * Manages the pair of Pokémon shown to the user for voting.
  *
- * Subscribes to Supabase Realtime on `ratings` and `matchups`.
- * - On a ratings UPDATE: patches the changed row in local state.
- * - On a matchups INSERT: prepends the new row and trims to the recent window.
+ * The *displayed* pair is intentionally stable — it does NOT change when
+ * other users vote and Supabase Realtime pushes rating/matchup updates.
+ * Realtime events only update the internal live-state snapshot so that
+ * when the local user calls `advance()`, the next pair is computed from
+ * the most up-to-date data.
  *
- * Pair selection runs client-side on the in-memory ratings snapshot —
- * same algorithm as before, no round-trip needed.
- *
- * Returns:
- *   undefined — still loading initial data
- *   null      — pool too small to form a pair
- *   SelectedPair — ready to display
+ * Flow:
+ *   1. On mount: fetch initial ratings + recent matchups, compute first pair,
+ *      lock it in as `currentPair`.
+ *   2. Realtime events: patch `liveState` in place — `currentPair` unchanged.
+ *   3. User votes/skips → calls `advance()` → snapshot live state → recompute
+ *      → new pair locked in.
  *
  * @param pokemon - The full Pokémon list (static, from usePokemon)
  */
-export const useNextPair = (
-  pokemon: Pokemon[],
-): SelectedPair | null | undefined => {
-  const [state, setState] = useState<NextPairState>({
+export const useNextPair = (pokemon: Pokemon[]): NextPairHandle => {
+  // -------------------------------------------------------------------------
+  // Live state — updated by Realtime, NOT directly rendered
+  // -------------------------------------------------------------------------
+  const [liveState, setLiveState] = useState<LiveState>({
     ratings: [],
     recentMatchups: [],
     isLoading: true,
   });
 
-  // Stable ref so Realtime callbacks can read the latest ratings map without
-  // closing over stale state from the initial render.
+  // Stable ref so Realtime callbacks always see the latest ratings without
+  // closing over a stale snapshot from the initial render.
   const ratingsRef = useRef<Map<number, RatingRow>>(new Map());
+
+  // -------------------------------------------------------------------------
+  // Locked pair — only changes when advance() is called
+  // -------------------------------------------------------------------------
+
+  // The pair we actually show. Derived once per advance() call (or on initial
+  // load) and then frozen until the next advance.
+  const [currentPair, setCurrentPair] = useState<
+    SelectedPair | null | undefined
+  >(undefined);
+
+  // Keep a ref to liveState so `advance` can read it synchronously without
+  // needing to be recreated every render.
+  const liveStateRef = useRef<LiveState>(liveState);
+  useEffect(() => {
+    liveStateRef.current = liveState;
+  }, [liveState]);
+
+  // -------------------------------------------------------------------------
+  // Pair computation helper (pure)
+  // -------------------------------------------------------------------------
+  const computePair = useCallback(
+    (state: LiveState): SelectedPair | null | undefined => {
+      if (state.isLoading) return undefined;
+      if (pokemon.length < 2) return null;
+
+      const ratingMap = new Map<number, RatingRow>(
+        state.ratings.map((r) => [r.pokemon_id, r]),
+      );
+
+      const pool = pokemon.flatMap((p) => {
+        const row = ratingMap.get(p.id);
+        if (!row) return [];
+        return [
+          {
+            pokemon: p,
+            rating: {
+              pokemonId: row.pokemon_id,
+              mu: row.mu,
+              sigma: row.sigma,
+              ordinal: row.ordinal,
+              matchCount: row.match_count,
+            },
+          },
+        ];
+      });
+
+      if (pool.length < 2) return null;
+
+      const recentMatchups = state.recentMatchups.map((m) => ({
+        winnerId: m.winner_id,
+        loserId: m.loser_id,
+      }));
+
+      const result = Effect.runSyncExit(selectNextPair(pool, recentMatchups));
+
+      if (result._tag === "Failure") {
+        console.error("[useNextPair] pair selection failed:", result.cause);
+        return null;
+      }
+
+      return result.value;
+    },
+    [pokemon],
+  );
 
   // -------------------------------------------------------------------------
   // Initial fetch + Realtime subscriptions
   // -------------------------------------------------------------------------
-
   useEffect(() => {
     let cancelled = false;
 
@@ -82,22 +166,27 @@ export const useNextPair = (
       );
       ratingsRef.current = ratingsMap;
 
-      setState({
+      const initialState: LiveState = {
         ratings: ratingsResult.data ?? [],
         recentMatchups: matchupsResult.data ?? [],
         isLoading: false,
-      });
+      };
+
+      setLiveState(initialState);
+
+      // Lock in the very first pair immediately after the initial fetch.
+      // We set it directly here rather than relying on advanceTick so there's
+      // no extra render cycle between "data ready" and "pair shown".
+      setCurrentPair(computePair(initialState));
     };
 
     void fetchInitialData();
 
-    // ---------------------------------------------------------------------
+    // -----------------------------------------------------------------------
     // Realtime: ratings channel
     //
-    // After a vote lands, the two updated rating rows are pushed here.
-    // We do a surgical patch on the array — no full re-fetch needed.
-    // ---------------------------------------------------------------------
-
+    // Patches the live snapshot only — does NOT touch currentPair.
+    // -----------------------------------------------------------------------
     const ratingsChannel = supabase
       .channel("nextpair:ratings")
       .on(
@@ -107,7 +196,7 @@ export const useNextPair = (
           const updated = payload.new as RatingRow;
           ratingsRef.current.set(updated.pokemon_id, updated);
 
-          setState((prev) => ({
+          setLiveState((prev) => ({
             ...prev,
             ratings: prev.ratings.map((r) =>
               r.pokemon_id === updated.pokemon_id ? updated : r,
@@ -117,13 +206,11 @@ export const useNextPair = (
       )
       .subscribe();
 
-    // ---------------------------------------------------------------------
+    // -----------------------------------------------------------------------
     // Realtime: matchups channel
     //
-    // On any INSERT (vote or skip), prepend the new row and trim the window
-    // so we never hold more than RECENT_MATCHUP_LIMIT rows in memory.
-    // ---------------------------------------------------------------------
-
+    // Prepends the new row and trims the window — does NOT touch currentPair.
+    // -----------------------------------------------------------------------
     const matchupsChannel = supabase
       .channel("nextpair:matchups")
       .on(
@@ -132,7 +219,7 @@ export const useNextPair = (
         (payload) => {
           const inserted = payload.new as MatchupRow;
 
-          setState((prev) => ({
+          setLiveState((prev) => ({
             ...prev,
             recentMatchups: [inserted, ...prev.recentMatchups].slice(
               0,
@@ -153,51 +240,28 @@ export const useNextPair = (
   }, [pokemon]);
 
   // -------------------------------------------------------------------------
-  // Pair selection (pure, memoised)
+  // Advance — called by the consumer after a local vote/skip
   // -------------------------------------------------------------------------
+  const advance = useCallback(() => {
+    // Snapshot the latest live state synchronously and derive the next pair.
+    // This runs outside of React's render cycle so the new pair is ready
+    // (or computed) before the component re-renders.
+    setCurrentPair(computePair(liveStateRef.current));
+  }, [computePair]);
 
-  const pair = useMemo<SelectedPair | null | undefined>(() => {
-    if (state.isLoading) return undefined;
-    if (pokemon.length < 2) return null;
-
-    const ratingMap = new Map<number, RatingRow>(
-      state.ratings.map((r) => [r.pokemon_id, r]),
-    );
-
-    const pool = pokemon.flatMap((p) => {
-      const row = ratingMap.get(p.id);
-      if (!row) return [];
-      return [
-        {
-          pokemon: p,
-          rating: {
-            pokemonId: row.pokemon_id,
-            mu: row.mu,
-            sigma: row.sigma,
-            ordinal: row.ordinal,
-            matchCount: row.match_count,
-          },
-        },
-      ];
-    });
-
-    if (pool.length < 2) return null;
-
-    // Map MatchupRow → the shape selectNextPair expects
-    const recentMatchups = state.recentMatchups.map((m) => ({
-      winnerId: m.winner_id,
-      loserId: m.loser_id,
-    }));
-
-    const result = Effect.runSyncExit(selectNextPair(pool, recentMatchups));
-
-    if (result._tag === "Failure") {
-      console.error("[useNextPair] pair selection failed:", result.cause);
-      return null;
+  // -------------------------------------------------------------------------
+  // If pokemon list changes identity (e.g. data refetch), recompute from
+  // the current live snapshot so we don't show a stale pair with bad IDs.
+  // -------------------------------------------------------------------------
+  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional — recompute when pokemon list changes
+  useEffect(() => {
+    if (!liveStateRef.current.isLoading) {
+      setCurrentPair(computePair(liveStateRef.current));
     }
+  }, [pokemon, computePair]);
 
-    return result.value;
-  }, [state, pokemon]);
-
-  return pair;
+  return useMemo(
+    () => ({ pair: currentPair, advance }),
+    [currentPair, advance],
+  );
 };

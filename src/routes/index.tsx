@@ -21,7 +21,7 @@ function VotePage() {
     isError: pokemonError,
   } = usePokemon();
 
-  const pair = useNextPair(pokemon ?? []);
+  const { pair, advance } = useNextPair(pokemon ?? []);
   const tierlistResult = useTierlist(pokemon ?? [], strategy);
 
   if (pokemonLoading) {
@@ -69,12 +69,7 @@ function VotePage() {
           </div>
         )}
 
-        {pair && (
-          <ComparisonView
-            key={`${pair.left.pokemon.id}-${pair.right.pokemon.id}`}
-            pair={pair}
-          />
-        )}
+        {pair && <ComparisonView pair={pair} onAdvance={advance} />}
 
         <Faq />
       </div>

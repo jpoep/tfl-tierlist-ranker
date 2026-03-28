@@ -6,6 +6,7 @@ import { PokemonCard } from "./PokemonCard";
 
 interface ComparisonViewProps {
   pair: SelectedPair;
+  onAdvance: () => void;
 }
 
 type VoteState =
@@ -13,6 +14,8 @@ type VoteState =
   | { status: "voted"; winnerId: number }
   | { status: "skipped" }
   | { status: "error"; message: string };
+
+const ADVANCE_DELAY_MS = 800;
 
 const KeyHint = ({
   labels,
@@ -37,8 +40,14 @@ const KeyHint = ({
   </span>
 );
 
-export const ComparisonView = ({ pair }: ComparisonViewProps) => {
+export const ComparisonView = ({ pair, onAdvance }: ComparisonViewProps) => {
   const [voteState, setVoteState] = useState<VoteState>({ status: "idle" });
+
+  // When the pair prop changes (i.e. after advance() causes a re-render with a
+  // new pair), reset the vote state so the new cards are interactive.
+  useEffect(() => {
+    setVoteState({ status: "idle" });
+  }, [pair]);
 
   const handleVote = useCallback(
     (winnerId: number, loserId: number) => {
@@ -46,15 +55,19 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
 
       setVoteState({ status: "voted", winnerId });
 
-      Effect.runPromise(recordVote(winnerId, loserId)).catch((err: unknown) => {
-        console.error("[ComparisonView] recordVote failed:", err);
-        setVoteState({
-          status: "error",
-          message: err instanceof Error ? err.message : "Unknown error",
+      Effect.runPromise(recordVote(winnerId, loserId))
+        .then(() => {
+          setTimeout(onAdvance, ADVANCE_DELAY_MS);
+        })
+        .catch((err: unknown) => {
+          console.error("[ComparisonView] recordVote failed:", err);
+          setVoteState({
+            status: "error",
+            message: err instanceof Error ? err.message : "Unknown error",
+          });
         });
-      });
     },
-    [voteState.status],
+    [voteState.status, onAdvance],
   );
 
   const handleSkip = useCallback(() => {
@@ -62,16 +75,23 @@ export const ComparisonView = ({ pair }: ComparisonViewProps) => {
 
     setVoteState({ status: "skipped" });
 
-    Effect.runPromise(
-      recordSkip(pair.left.pokemon.id, pair.right.pokemon.id),
-    ).catch((err: unknown) => {
-      console.error("[ComparisonView] recordSkip failed:", err);
-      setVoteState({
-        status: "error",
-        message: err instanceof Error ? err.message : "Unknown error",
+    Effect.runPromise(recordSkip(pair.left.pokemon.id, pair.right.pokemon.id))
+      .then(() => {
+        setTimeout(onAdvance, ADVANCE_DELAY_MS);
+      })
+      .catch((err: unknown) => {
+        console.error("[ComparisonView] recordSkip failed:", err);
+        setVoteState({
+          status: "error",
+          message: err instanceof Error ? err.message : "Unknown error",
+        });
       });
-    });
-  }, [voteState.status, pair.left.pokemon.id, pair.right.pokemon.id]);
+  }, [
+    voteState.status,
+    pair.left.pokemon.id,
+    pair.right.pokemon.id,
+    onAdvance,
+  ]);
 
   // Keyboard navigation — only active while idle so it can't double-fire
   useEffect(() => {
